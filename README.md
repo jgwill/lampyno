@@ -23,10 +23,9 @@ This is a basic LAMP stack environment built using Docker Compose. It consists f
 Clone this repository on your local computer and checkout the appropriate branch e.g. 7.1.x. Run the `docker-compose up -d`.
 
 ```shell
-git clone https://github.com/sprintcube/docker-compose-lamp.git
-cd docker-compose-lamp/
+git clone https://github.com/jgwill/lampyno.git
+cd lampyno/
 git fetch --all
-git checkout 7.1.x
 docker-compose up -d
 ```
 
@@ -46,8 +45,15 @@ Open a terminal and `cd` to the folder in which `docker-compose.yml` is saved an
 docker-compose up
 ```
 
+### Bash Alias
+```bash
+cat bashrc >~/.bashrc
+```
+* webs-bash, webs-restart,ws-restart,be-bash,be-restart, ...
 
 ## Usage
+
+
 
 ### Starting containers
 
