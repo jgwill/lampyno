@@ -1,0 +1,38 @@
+{
+  "name": "nodelamp",
+  "version": "0.0.1",
+  "description": "A Node Apache Linux MySql PHP Server.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "docker-compose -f docker-compose.yml config",
+     "dk:build": "docker build --tag=nodelamp .        #This creates a Docker image, which we’re going to name using the --tag option",
+    "dk:lsi": "docker image ls                             #@a List images",
+    "dk:lsc": "docker container ls                         #@a List container ",
+    "list-container": "npm run dk:lsc                      # alias of dk:lsc",
+    "dk:fg": "docker run -p 4000:80 nodelamp         #@a Run in foreground the container",
+    "dk:tst": "curl http://localhost:4000                  #@test the server ",
+    "dk:bg": "docker run -d -p 4000:80 nodelamp   #@a Run in background the container",
+    "dk:publish:tag":"docker tag nodelamp jgwill/nodelamp",
+    "dk:publish:push":"docker push jgwill/nodelamp:latest",
+    "c": "cat package.json | grep dk                       # List these commands",
+    "dk:bash:nodelamp":"docker run -i -t --rm jgwill/nodelamp /bin/bash",
+    "dk:bash:ubuntu":"docker run -i -t --rm ubuntu /bin/bash"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuillaumeIsabelleX/docker-compose-lamp.git"
+  },
+  "keywords": [
+    "gix",
+    "docker",
+    "node",
+    "lamp"
+  ],
+  "author": "Guillaume Isabelle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GuillaumeIsabelleX/docker-compose-lamp/issues"
+  },
+  "homepage": "https://github.com/GuillaumeIsabelleX/docker-compose-lamp#readme"
+}
