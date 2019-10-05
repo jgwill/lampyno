@@ -1,0 +1,19 @@
+/* CSS file for wordpress spin360 plugin */
+
+/* =Normalize
+-----------------------------------------------------------------------------*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.imgover {padding:0px;}
+.container { position:relative; }
+.imgloader  { position:absolute; top: 25%; margin-top: -35px; left: 50%; margin-left: -64px; z-index: 1; } 
+/* margin top, left = half size of image */
+/*.buttonSS{
+   z-index: 100; cursor: pointer; position:absolute;
+   top:5; list-style-type:none; color:DeepSkyBlue;
+}*/

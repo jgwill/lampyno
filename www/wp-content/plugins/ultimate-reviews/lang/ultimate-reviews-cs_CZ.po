@@ -1,0 +1,663 @@
+# Copyright (C) 2016 Reviews
+# This file is distributed under the same license as the Reviews package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Reviews 1.3.9\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ultimate-reviews\n"
+"POT-Creation-Date: 2016-10-31 18:25:03+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-05-11 17:24+0200\n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.0.7\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"Language: cs_CZ\n"
+
+#: Functions/EWD_URP_Add_Views_Column.php:4
+msgid "# of Views"
+msgstr "# shlédnutí"
+
+#: Functions/EWD_URP_Add_Views_Column.php:5
+msgid "Product"
+msgstr "Produkt"
+
+#: Functions/EWD_URP_Add_Views_Column.php:6
+#: Functions/Register_EWD_URP_Posts_Taxonomies.php:159
+#: Shortcodes/SelectReview.php:93 Shortcodes/SubmitReview.php:46
+#: html/OptionsPage.php:888
+msgid "Score"
+msgstr "Hodnocení produktu"
+
+#: Functions/EWD_URP_Add_Views_Column.php:7
+msgid "Post ID"
+msgstr "ID Příspěvku"
+
+#: Functions/EWD_URP_Add_Views_Column.php:137
+msgid "Show All Products"
+msgstr "Zobrazit Všechny Produkty"
+
+#: Functions/EWD_URP_Captcha.php:11
+msgid "Image Number: "
+msgstr "Opište číslo "
+
+#. Plugin Name of the plugin/theme
+#: Functions/EWD_URP_Replace_WooCommerce_Reviews.php:21
+#: Functions/EWD_URP_Replace_WooCommerce_Reviews.php:46
+#: Functions/Register_EWD_URP_Posts_Taxonomies.php:5
+#: Functions/Register_EWD_URP_Posts_Taxonomies.php:7 Main.php:94
+msgid "Reviews"
+msgstr "Recenze"
+
+#: Functions/EWD_URP_Replace_WooCommerce_Reviews.php:32
+msgid "Leave a review"
+msgstr "Napište recenzi produktu"
+
+#: Functions/EWD_URP_Replace_WooCommerce_Reviews.php:67 html/WC_Rating.php:35
+msgid "Rated %s out of %s"
+msgstr "Hodnotilo %s z %s"
+
+#: Functions/EWD_URP_Replace_WooCommerce_Reviews.php:68 html/WC_Rating.php:37
+msgid "out of %s"
+msgstr "z %s"
+
+#: Functions/EWD_URP_Submit_Review.php:46
+msgid "The number entered in the captcha field was not correct."
+msgstr "Špatně opsané číslo."
+
+#: Functions/EWD_URP_Submit_Review.php:56
+msgid "Review was not created succesfully."
+msgstr "Recenze nebyla správně vytvořena."
+
+#: Functions/EWD_URP_Submit_Review.php:134
+msgid "Email Confirmation for Product Review"
+msgstr "Ověření Emailu pro Recenzi"
+
+#: Functions/EWD_URP_Submit_Review.php:136
+msgid "Hello,"
+msgstr "Dobrý den,"
+
+#: Functions/EWD_URP_Submit_Review.php:137
+msgid ""
+"Please confirm your email address for the product review you submitted "
+"titled "
+msgstr "Potvrďte prosím svoji emailovou adresu pro recenzi "
+
+#: Functions/EWD_URP_Submit_Review.php:138
+msgid "by going to the following link:"
+msgstr "navštívením tohoto odkazu:"
+
+#: Functions/EWD_URP_Submit_Review.php:139
+msgid "Confirm your email address"
+msgstr "Ověřte svoji emailovou adresu"
+
+#: Functions/EWD_URP_Submit_Review.php:140
+msgid "Thank you for the review, and have a great day,"
+msgstr "Děkujeme Vám za recenzi a přejeme Vám hezký den,"
+
+#: Functions/EWD_URP_Submit_Review.php:157
+msgid "Thank you for confirming your email address!"
+msgstr "Děkujeme Vám za ověření Vaší emailové adresy!"
+
+#: Functions/EWD_URP_Submit_Review.php:167
+msgid "New Review Received"
+msgstr "Obdržena Nová Recenze"
+
+#: Functions/EWD_URP_Submit_Review.php:169
+msgid "Hello Admin,"
+msgstr "Dobrý den Admin,"
+
+#: Functions/EWD_URP_Submit_Review.php:170
+msgid "You've received a new review for the product"
+msgstr "Obdrželi jste novou recenzi na produkt"
+
+#: Functions/EWD_URP_Submit_Review.php:171
+msgid "The review reads:<br>"
+msgstr "Recenze zní:<br>"
+
+#: Functions/EWD_URP_Submit_Review.php:173
+msgid "You can view the entire review by going to the following link:<br>"
+msgstr "Celou recenzi si můžete přečíst zde:<br>"
+
+#: Functions/EWD_URP_Submit_Review.php:174
+msgid "See the review"
+msgstr "Podívejte se na recenzi"
+
+#: Functions/EWD_URP_Submit_Review.php:175
+msgid "Have a great day,"
+msgstr "Hezký den,"
+
+#: Functions/EWD_URP_Submit_Review.php:176
+msgid "Ultimate Reviews Team"
+msgstr "Tým Ultimate Reviews"
+
+#: Functions/EWD_URP_Submit_Review.php:201
+msgid "File must be .jpg or .png"
+msgstr "Soubor musí být ve formátu .jpg nebo .png"
+
+#: Functions/EWD_URP_Upgrade_Box.php:7 html/DashboardPage.php:12
+msgid "Full Version"
+msgstr "Plná Verze"
+
+#: Functions/EWD_URP_Upgrade_Box.php:9 html/DashboardPage.php:14
+msgid "Upgrade to the full version "
+msgstr "Upgradujte na plnou verzi "
+
+#: Functions/EWD_URP_Upgrade_Box.php:9 html/DashboardPage.php:14
+msgid ""
+"to take advantage of all the available features of Ultimate Reviews for "
+"Wordpress!"
+msgstr "pro využití všech dostupných možností Ultimate Reviews pro Wordpress!"
+
+#: Functions/EWD_URP_Upgrade_Box.php:10 html/DashboardPage.php:15
+msgid "What you get by upgrading:"
+msgstr "Co upgradem získáte:"
+
+#: Functions/EWD_URP_Upgrade_Box.php:20 html/DashboardPage.php:27
+msgid "Product Key"
+msgstr "Klíč Produktu"
+
+#: Functions/EWD_URP_Upgrade_Box.php:23 html/DashboardPage.php:30
+msgid "Upgrade"
+msgstr "Upgradovat"
+
+#: Functions/EWD_URP_Widgets.php:10
+msgid "Recent Reviews"
+msgstr "Poslední Recenze"
+
+#: Functions/EWD_URP_Widgets.php:11
+msgid "Insert a number of recent reviews"
+msgstr "Vložte počet posledních recenzí"
+
+#: Functions/EWD_URP_Widgets.php:40 Functions/EWD_URP_Widgets.php:187
+msgid "3"
+msgstr "3"
+
+#: Functions/EWD_URP_Widgets.php:45 Functions/EWD_URP_Widgets.php:114
+#: Functions/EWD_URP_Widgets.php:192
+msgid "Text Before:"
+msgstr "Text Před:"
+
+#: Functions/EWD_URP_Widgets.php:49 Functions/EWD_URP_Widgets.php:196
+msgid "Number of Reviews:"
+msgstr "Počet Recenzí:"
+
+#: Functions/EWD_URP_Widgets.php:53 Functions/EWD_URP_Widgets.php:122
+#: Functions/EWD_URP_Widgets.php:200
+msgid "Text After:"
+msgstr "Text Za:"
+
+#: Functions/EWD_URP_Widgets.php:83
+msgid "Selected Reviews"
+msgstr "Vybrané Recenze"
+
+#: Functions/EWD_URP_Widgets.php:84
+msgid "Insert a number of selected reviews"
+msgstr "Vložte počet vybraných recenzí"
+
+#: Functions/EWD_URP_Widgets.php:118
+msgid "IDs of Posts to Display"
+msgstr "ID Čísla Příspěvků k Zobrazení"
+
+#: Functions/EWD_URP_Widgets.php:152
+msgid "Popular Reviews"
+msgstr "Populární Recenze"
+
+#: Functions/EWD_URP_Widgets.php:153
+msgid "Insert a number of popular reviews"
+msgstr "Vložte počet populárních recenzí"
+
+#: Functions/EWD_URP_WooCommerce_Review_Import.php:79
+msgid "WooCommerce reviews have been succesfully imported."
+msgstr "WooCommerce recenze byly úspěšně naimportovány."
+
+#: Functions/Register_EWD_URP_Posts_Taxonomies.php:6
+#: Shortcodes/SubmitReview.php:44 html/OptionsPage.php:939
+msgid "Review"
+msgstr "Recenze"
+
+#: Functions/Register_EWD_URP_Posts_Taxonomies.php:8 Main.php:96
+msgid "Add New"
+msgstr "Nová Položka"
+
+#: Functions/Register_EWD_URP_Posts_Taxonomies.php:9
+msgid "Add New Review"
+msgstr "Přidat Novou Recenzi"
+
+#: Functions/Register_EWD_URP_Posts_Taxonomies.php:10
+msgid "Edit Review"
+msgstr "Upravit Recenzi"
+
+#: Functions/Register_EWD_URP_Posts_Taxonomies.php:11
+msgid "New Review"
+msgstr "Nová Recenze"
+
+#: Functions/Register_EWD_URP_Posts_Taxonomies.php:12
+msgid "View Review"
+msgstr "Zobrazit Recenzi"
+
+#: Functions/Register_EWD_URP_Posts_Taxonomies.php:13
+#: Shortcodes/Display_URP_Search.php:18
+msgid "Search Reviews"
+msgstr "Hledat Recenze"
+
+#: Functions/Register_EWD_URP_Posts_Taxonomies.php:14
+msgid "Nothing found"
+msgstr "Nic nebylo nalezeno"
+
+#: Functions/Register_EWD_URP_Posts_Taxonomies.php:15
+msgid "Nothing found in Trash"
+msgstr "V koši nebylo nic nalezeno"
+
+#: Functions/Register_EWD_URP_Posts_Taxonomies.php:42
+msgid "Use the following shortcode to add this review to a page:"
+msgstr "Použijte následující shortcode pro vložení recenzí na stránku:"
+
+#: Functions/Register_EWD_URP_Posts_Taxonomies.php:52
+msgid "Review Details"
+msgstr "Detaily Recenze"
+
+#: Functions/Register_EWD_URP_Posts_Taxonomies.php:82
+msgid "Review Weight:"
+msgstr "Váha Recenze:"
+
+#: Functions/Register_EWD_URP_Posts_Taxonomies.php:93
+msgid "Review Karma:"
+msgstr "Karma Recenze:"
+
+#: Functions/Register_EWD_URP_Posts_Taxonomies.php:104
+msgid "Reviewer's Email:"
+msgstr "Email Hodnotícího:"
+
+#: Functions/Register_EWD_URP_Posts_Taxonomies.php:115
+msgid "Email Confirmed:"
+msgstr "Email Ověřen:"
+
+#: Functions/Register_EWD_URP_Posts_Taxonomies.php:128
+msgid "Product Name:"
+msgstr "Název Produktu:"
+
+#: Functions/Register_EWD_URP_Posts_Taxonomies.php:137
+msgid "Post Author:"
+msgstr "Autor Příspěvku:"
+
+#: Functions/Register_EWD_URP_Posts_Taxonomies.php:147
+#: Shortcodes/SubmitReview.php:42 html/OptionsPage.php:933
+msgid "Overall Score"
+msgstr "Průměrné Hodnocení"
+
+#: Functions/Register_EWD_URP_Posts_Taxonomies.php:167
+#: Shortcodes/SelectReview.php:95 Shortcodes/SubmitReview.php:48
+#: html/OptionsPage.php:894
+msgid "Explanation"
+msgstr "Vysvětlivky"
+
+#: Functions/Register_EWD_URP_Posts_Taxonomies.php:277
+#: Shortcodes/SelectReview.php:87
+msgid "Posted "
+msgstr "Odesláno "
+
+#: Functions/Register_EWD_URP_Posts_Taxonomies.php:279
+#: Shortcodes/SelectReview.php:89
+msgid "by "
+msgstr " "
+
+#: Functions/Register_EWD_URP_Posts_Taxonomies.php:281
+#: Shortcodes/SelectReview.php:91
+msgid "on "
+msgstr "na "
+
+#: Functions/Register_EWD_URP_Posts_Taxonomies.php:283
+msgid "Score "
+msgstr "Hodnocení "
+
+#: Functions/Register_EWD_URP_Posts_Taxonomies.php:285
+msgid "Explanation "
+msgstr "Vysvětlivky "
+
+#: Functions/Register_EWD_URP_Posts_Taxonomies.php:303
+#: Shortcodes/SelectReview.php:147
+msgid "Review for "
+msgstr "Recenze pro "
+
+#: Functions/Update_EWD_URP_Admin_Databases.php:211
+msgid "Options have been successfully updated."
+msgstr "Nastavení bylo úspěšně aktualizováno."
+
+#: Functions/Update_EWD_URP_Content.php:17
+msgid "The form has not worked correctly. Please contact the plugin developer."
+msgstr "Formulář nepracuje správně. Kontaktujte prosím vývojáře pluginu."
+
+#: Main.php:89 html/MainScreen.php:3
+msgid "Dashboard"
+msgstr "Nástěnka"
+
+#: Main.php:91
+msgid "Approved Reviews"
+msgstr "Odsouhlasené Recenze"
+
+#: Main.php:92
+msgid "Awaiting Approval"
+msgstr "Čekající na Schválení"
+
+#: Main.php:97
+msgid "Import"
+msgstr "Import"
+
+#: Main.php:98 html/MainScreen.php:7
+msgid "Options"
+msgstr "Nastavení"
+
+#: Main.php:249
+msgid "Next"
+msgstr "Další"
+
+#: Main.php:250
+msgid "Close"
+msgstr "Zavřít"
+
+#: Shortcodes/DisplayReviews.php:25
+msgid " reviews "
+msgstr " recenze "
+
+#: Shortcodes/DisplayReviews.php:170 Shortcodes/DisplayReviews.php:186
+msgid "Reviews for"
+msgstr "Recenze pro"
+
+#: Shortcodes/DisplayReviews.php:223
+msgid " of "
+msgstr " "
+
+#: Shortcodes/DisplayReviews.php:242
+msgid "Filter"
+msgstr "Filtr"
+
+#: Shortcodes/DisplayReviews.php:250
+msgid "Product name:"
+msgstr "Název produktu:"
+
+#: Shortcodes/DisplayReviews.php:252
+msgid "All"
+msgstr "Vše"
+
+#: Shortcodes/DisplayReviews.php:261
+msgid "Review score:"
+msgstr "Hodnocení recenze:"
+
+#: Shortcodes/DisplayReviews.php:286
+msgid "No matching reviews found."
+msgstr "Nenalezeny žádné odpovídající recenze."
+
+#: Shortcodes/DisplayReviews.php:320
+msgid "Summary for"
+msgstr "Souhrn pro"
+
+#: Shortcodes/DisplayReviews.php:353
+msgid "rating"
+msgstr "hodnocení"
+
+#: Shortcodes/DisplayReviews.php:354
+msgid "ratings"
+msgstr "hodnocení"
+
+#: Shortcodes/DisplayReviews.php:355
+msgid "Average Score"
+msgstr "Průměrné Hodnocení"
+
+#: Shortcodes/Display_Summary_Statistics.php:30
+msgid "Back to Summary"
+msgstr "Zpět na souhrn"
+
+#: Shortcodes/SelectReview.php:259
+msgid "Read More"
+msgstr "Číst Více"
+
+#: Shortcodes/SubmitReview.php:32 html/OptionsPage.php:903
+msgid "Product Name"
+msgstr "Název Produktu"
+
+#: Shortcodes/SubmitReview.php:34 html/OptionsPage.php:909
+msgid "Review Author"
+msgstr "Autor Recenze"
+
+#: Shortcodes/SubmitReview.php:36
+msgid "What name should be displayed with your review?"
+msgstr "Jaké jméno bude zobrazené u Vaší recenze?"
+
+#: Shortcodes/SubmitReview.php:38 html/OptionsPage.php:921
+msgid "Review Title"
+msgstr "Titulek Recenze"
+
+#: Shortcodes/SubmitReview.php:40
+msgid "What title should be displayed with your review?"
+msgstr "Jaký titulek má být zobrazen u Vaší recenze?"
+
+#: Shortcodes/SubmitReview.php:50 Shortcodes/SubmitReview.php:64
+msgid "Send Review"
+msgstr "Odeslat hodnocení"
+
+#: Shortcodes/SubmitReview.php:60
+msgid "Thank you for submitting a review."
+msgstr "Děkujeme Vám za odeslání recenze."
+
+#: Shortcodes/SubmitReview.php:61
+msgid "Your review will be visible once it's approved by an administrator."
+msgstr "Vaše recenze bude viditelná, jakmile ji zkontrolujeme."
+
+#: Shortcodes/SubmitReview.php:62
+msgid "Submit a Review"
+msgstr "Odeslat Recenzi"
+
+#: Shortcodes/SubmitReview.php:63
+msgid "Please fill out the form below to submit a review."
+msgstr "Vyplňte prosím následující formulář pro odeslání recenze."
+
+#: Shortcodes/SubmitReview.php:95
+msgid "Please log in to leave a review"
+msgstr "Pro vložení recenze se prosím přihlašte"
+
+#: Shortcodes/SubmitReview.php:97
+msgid "Login Options:"
+msgstr "Možnosti Přihlášení:"
+
+#: Shortcodes/SubmitReview.php:156
+msgid "Review of "
+msgstr "Recenze "
+
+#: Shortcodes/SubmitReview.php:222
+msgid "Reviewer's Email Address"
+msgstr "Emailová Adresa Hodnotícího"
+
+#: Shortcodes/SubmitReview.php:228
+msgid ""
+"Please confirm your e-mail to verify your identity. It will not be displayed."
+msgstr "Potvrďte prosím svůj email. Email nebude viditelný pro ostatní."
+
+#: Shortcodes/SubmitReview.php:248
+msgid "Review Image"
+msgstr "Obrázek Recenze"
+
+#: Shortcodes/SubmitReview.php:251
+msgid "The image that should be associated with your review"
+msgstr "Obrázek, který by měl být vložen do Vaší recenze"
+
+#: Shortcodes/SubmitReview.php:275 Shortcodes/SubmitReview.php:325
+msgid "out of"
+msgstr "z"
+
+#: Shortcodes/SubmitReview.php:282 Shortcodes/SubmitReview.php:291
+#: Shortcodes/SubmitReview.php:335
+msgid "Characters remaining:"
+msgstr "Zbývající znaky:"
+
+#: Shortcodes/SubmitReview.php:349
+msgid "Click to add your own review!"
+msgstr "Klikněte pro přidání vlastní recenze!"
+
+#: Shortcodes/SubmitReview.php:383 Shortcodes/SubmitReview.php:393
+msgid "Logout"
+msgstr "Odhlásit se"
+
+#: Shortcodes/SubmitReview.php:399
+msgid "You have been successfully logged out via Facebook. "
+msgstr "Byli jste úspěšně odhlášeni pomocí Facebooku. "
+
+#: Shortcodes/SubmitReview.php:401 Shortcodes/SubmitReview.php:409
+msgid "Please reload the page"
+msgstr "Obnovte prosím stránku"
+
+#: Shortcodes/SubmitReview.php:403 Shortcodes/SubmitReview.php:411
+msgid "if you'd like to log in again"
+msgstr "pokud se chcete znovu přihlásit"
+
+#: Shortcodes/SubmitReview.php:407
+msgid "You have been successfully logged out via Twitter. "
+msgstr "Byli jste úspěšně odhlášeni pomocí Twitteru. "
+
+#: Shortcodes/SubmitReview.php:458
+msgid "WordPress Login"
+msgstr "WordPress Přihlášení"
+
+#: Shortcodes/SubmitReview.php:463
+msgid "Login"
+msgstr "Přihlášení"
+
+#: html/AdminHeader.php:2
+msgid "Ultimate Reviews"
+msgstr "Ultimate Reviews"
+
+#: html/DashboardPage.php:42
+msgid "Thank You!"
+msgstr "Děkujeme!"
+
+#: html/DashboardPage.php:44
+msgid "Thanks for installing the Ultimate Reviews plugin."
+msgstr "Děkujeme Vám za instalaci Ultimate Reviews pluginu."
+
+#: html/DashboardPage.php:44
+msgid "Subscribe to our YouTube channel "
+msgstr "Přihlašte se k odběru našeho YouTube kanálu "
+
+#: html/DashboardPage.php:44
+msgid "for tutorial videos on this and our other plugins!"
+msgstr "pro shlédnutí návodů tohoto i dalších pluginů!"
+
+#: html/DashboardPage.php:45
+msgid "Thanks for upgrading to version 1.3.3!"
+msgstr "Děkujeme Vám za upgrade na verzi 1.3.3!"
+
+#: html/DashboardPage.php:45
+msgid "Please rate our plugin"
+msgstr "Ohodnoťte prosím náš plugin"
+
+#: html/DashboardPage.php:45
+msgid "if you find Ultimate Reviews useful!"
+msgstr "pokud ho shledáváte užitečným!"
+
+#: html/DashboardPage.php:157
+msgid "Title"
+msgstr "Titulek"
+
+#: html/DashboardPage.php:158
+msgid "Views"
+msgstr "Zobrazení"
+
+#: html/DashboardPage.php:159
+msgid "Review Rating"
+msgstr "Hodnocení Recenze"
+
+#: html/DashboardPage.php:173
+msgid ""
+"No reviews to display yet. Create a review and then view it for it to be "
+"displayed here."
+msgstr ""
+"Zatím zde nejsou žádné recenze k zobrazení. Vytvořte recenzi a poté ji "
+"zobrazte, aby se zde ukázala."
+
+#: html/DashboardPage.php:196
+msgid "Recent Changes"
+msgstr "Resetovat Změny"
+
+#: html/DashboardPage.php:206
+msgid "Goes great with:"
+msgstr "Hodí se k:"
+
+#: html/MainScreen.php:4
+msgid "Orders"
+msgstr "Objednávky"
+
+#: html/MainScreen.php:5
+msgid "Statuses"
+msgstr "Statusy"
+
+#: html/MainScreen.php:6
+msgid "Emails"
+msgstr "Emaily"
+
+#: html/OptionsPage.php:870
+msgid "Posted"
+msgstr "Odeslané"
+
+#: html/OptionsPage.php:876
+msgid "By"
+msgstr " "
+
+#: html/OptionsPage.php:882
+msgid "On"
+msgstr "Na"
+
+#: html/OptionsPage.php:915
+msgid "Author 'Comment'"
+msgstr "Autor 'Komentář'"
+
+#: html/OptionsPage.php:927
+msgid "Title 'Comment'"
+msgstr "Titulek 'Komentář'"
+
+#: html/OptionsPage.php:945
+msgid "Category 'Score'"
+msgstr "Kategorie 'Hodnocení'"
+
+#: html/OptionsPage.php:951
+msgid "Category 'Explanation'"
+msgstr "Kategorie 'Vysvětlivky'"
+
+#: html/OptionsPage.php:957
+msgid "'Send Review' Button"
+msgstr "Tlačítko Odeslat hodnocení"
+
+#: html/OptionsPage.php:966
+msgid "Submit Success Message"
+msgstr "Zpráva Úspěšně Odesláno"
+
+#: html/OptionsPage.php:972
+msgid "Submit Draft Add On Message"
+msgstr "Zpráva Odeslat koncept"
+
+#: html/WC_Rating.php:38
+msgid "based on %s customer rating"
+msgid_plural "based on %s customer ratings"
+msgstr[0] "založeno na %s hodnocení  zákazníků"
+msgstr[1] ""
+msgstr[2] ""
+
+#: html/WC_Rating.php:41
+msgid "%s customer review"
+msgid_plural "%s customer reviews"
+msgstr[0] "%s zákaznických recenzí"
+msgstr[1] ""
+msgstr[2] ""
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "http://www.EtoileWebDesign.com/plugins/ultimate-reviews/"
+msgstr "http://www.EtoileWebDesign.com/plugins/ultimate-reviews/"
+
+#. Description of the plugin/theme
+msgid "Accept and display reviews, style them for your site and much more!"
+msgstr "Akceptujte, upravujte a zobrazujte recenze Vašich webových stránek!"
+
+#. Author of the plugin/theme
+msgid "Etoile Web Design"
+msgstr "Etoile Web Design"

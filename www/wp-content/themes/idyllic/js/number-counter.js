@@ -1,0 +1,1 @@
+jQuery(document).ready(function(e){e(".counter").counterUp({delay:10,time:1e3,offset:70,beginAt:100,formatter:function(e){return e.replace(/,/g,".")}})});

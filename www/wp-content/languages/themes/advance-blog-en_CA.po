@@ -1,0 +1,305 @@
+# Translation of Themes - Advance Blog in English (Canada)
+# This file is distributed under the same license as the Themes - Advance Blog package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2018-12-19 13:35:41+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: en_CA\n"
+"Project-Id-Version: Themes - Advance Blog\n"
+
+#. Description of the theme
+msgid "Advance Blog is a perfect, modern, clean, responsive and retina-ready WordPress blog theme also suitable for magazines, newspapers, or review sites. The theme comes with several awesome features, including a featured posts slideshow, a color options, a magazine homepage template, and a two columned layout that makes your site in flash. A clean and elegant design helps you to deliever or present your content in a stilish way. Easy customization options with use of customizer API can give you an advance features to obtain a perfect looking site."
+msgstr "Advance Blog is a perfect, modern, clean, responsive and retina-ready WordPress blog theme also suitable for magazines, newspapers, or review sites. The theme comes with several awesome features, including a featured posts slideshow, a colour options, a magazine home page template, and a two columned layout that makes your site in flash. A clean and elegant design helps you to deliver or present your content in a stylish way. Easy customisation options with use of customiser API can give you an advance features to obtain a perfect looking site."
+
+#. Theme Name of the theme
+msgid "Advance Blog"
+msgstr "Advance Blog"
+
+#: functions.php:51
+msgid "Social Menu"
+msgstr "Social Menu"
+
+#. Template Name of the theme
+msgid "Home Page Template"
+msgstr "Home Page Template"
+
+#: search.php:19
+msgid "Search Results for: %s"
+msgstr "Search Results for: %s"
+
+#: inc/template-tags.php:108
+msgid "% Comments"
+msgstr "% Comments"
+
+#: inc/template-tags.php:108
+msgid "1 Comment"
+msgstr "1 Comment"
+
+#: inc/template-tags.php:108
+msgid "Leave a comment"
+msgstr "Leave a comment"
+
+#: inc/template-tags.php:102
+msgid "Tagged %1$s"
+msgstr "Tagged %1$s"
+
+#: inc/template-tags.php:96
+msgid "Posted in %1$s"
+msgstr "Posted in %1$s"
+
+#: inc/template-tags.php:79
+msgid " %1$s"
+msgstr " %1$s"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:77 inc/template-tags.php:94 inc/template-tags.php:100
+msgid " "
+msgstr " "
+
+#: inc/template-tags.php:33
+msgctxt "post author"
+msgid "by %s"
+msgstr "by %s"
+
+#: inc/template-tags.php:28 inc/template-tags.php:60
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "Posted on %s"
+
+#: inc/meta-box.php:84
+msgid "Choose a color for your Post Text."
+msgstr "Choose a colour for your Post Text."
+
+#: inc/meta-box.php:79
+msgid "Choose a color for your Post Backgorund."
+msgstr "Choose a colour for your Post Background."
+
+#: inc/meta-box.php:75
+msgid "Check To dissable Featured Image from single page"
+msgstr "Check To disable Featured Image from single page"
+
+#: inc/meta-box.php:21
+msgid "Single Page/Post Settings"
+msgstr "Single Page/Post Settings"
+
+#: inc/customizer/customizer-upsell.php:84
+msgid "Upgrade To Pro"
+msgstr "Upgrade To Pro"
+
+#: inc/customizer/customizer-upsell.php:83
+msgid "Advance Blog Pro"
+msgstr "Advance Blog Pro"
+
+#: inc/customizer/customizer-mode.php:58
+msgid "Copyright All rights reserved"
+msgstr "Copyright All rights reserved"
+
+#: inc/customizer/customizer-added-options.php:189
+msgid "Footer Credit Text"
+msgstr "Footer Credit Text"
+
+#: inc/customizer/customizer-added-options.php:173
+msgid "Footer Credit Options"
+msgstr "Footer Credit Options"
+
+#: inc/customizer/customizer-added-options.php:162
+msgid "FullWidth"
+msgstr "FullWidth"
+
+#: inc/customizer/customizer-added-options.php:161
+msgid "Right Sidebar"
+msgstr "Right Sidebar"
+
+#: inc/customizer/customizer-added-options.php:160
+msgid "Left Sidebar"
+msgstr "Left Sidebar"
+
+#: inc/customizer/customizer-added-options.php:157
+msgid "Select Global Sidebar Layout"
+msgstr "Select Global Sidebar Layout"
+
+#: inc/customizer/customizer-added-options.php:141
+msgid "Global Sidebar Options"
+msgstr "Global Sidebar Options"
+
+#: inc/customizer/customizer-added-options.php:127
+msgid "Recommended Size %1$s X %2$s"
+msgstr "Recommended Size %1$s X %2$s"
+
+#: inc/customizer/customizer-added-options.php:126
+msgid "Featured Category Background Image."
+msgstr "Featured Category Background Image."
+
+#: inc/customizer/customizer-added-options.php:113
+msgid "Select Featured Category"
+msgstr "Select Featured Category"
+
+#: inc/customizer/customizer-added-options.php:97
+msgid "Enable Featured Category"
+msgstr "Enable Featured Category"
+
+#: inc/customizer/customizer-added-options.php:81
+msgid "Featured Category Options"
+msgstr "Featured Category Options"
+
+#: inc/customizer/customizer-added-options.php:68
+msgid "Button Text Front Page Slider"
+msgstr "Button Text Front Page Slider"
+
+#: inc/customizer/customizer-added-options.php:53
+msgid "Category For Front Page Slider"
+msgstr "Category For Front Page Slider"
+
+#: inc/customizer/customizer-added-options.php:37
+msgid "Enable Front Page Slider"
+msgstr "Enable Front Page Slider"
+
+#: inc/customizer/customizer-added-options.php:21
+msgid "Banner Slider Options"
+msgstr "Banner Slider Options"
+
+#: inc/customizer/customizer-added-options.php:10
+msgid "Advance Blog Options"
+msgstr "Advance Blog Options"
+
+#: inc/added-functions.php:65
+msgctxt "Open Sans font: on or off"
+msgid "on"
+msgstr "on"
+
+#: inc/added-functions.php:36
+msgid "Footer Col-3"
+msgstr "Footer Col-3"
+
+#: inc/added-functions.php:27
+msgid "Footer Col-2"
+msgstr "Footer Col-2"
+
+#: inc/added-functions.php:18
+msgid "Footer Col-1"
+msgstr "Footer Col-1"
+
+#: inc/added-functions.php:9
+msgid "Sidebar"
+msgstr "Sidebar"
+
+#: home-page-template.php:64
+msgid "Newer Entries"
+msgstr "Newer Entries"
+
+#: home-page-template.php:58
+msgid "Older Entries"
+msgstr "Older Entries"
+
+#: header.php:56
+msgid "Skip to content"
+msgstr "Skip to content"
+
+#: functions.php:50
+msgid "Top"
+msgstr "Top"
+
+#: inc/customizer/customizer-mode.php:56 components/post/content.php:49
+msgid "Continue Reading"
+msgstr "Continue Reading"
+
+#. translators: %s: Name of current post.
+#: components/post/content-single.php:34
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+
+#: components/post/content-none.php:30
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+
+#: components/post/content-none.php:24
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+
+#: components/post/content-none.php:20
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+
+#: components/post/content-none.php:14
+msgid "Nothing Found"
+msgstr "Nothing Found"
+
+#. translators: %s: Name of current post
+#: inc/template-tags.php:115 components/page/content-page.php:31
+msgid "Edit %s"
+msgstr "Edit %s"
+
+#: components/page/content-page.php:21 components/post/content-single.php:39
+msgid "Pages:"
+msgstr "Pages:"
+
+#: components/navigation/navigation-top.php:4
+msgid "Primary Menu"
+msgstr "Primary Menu"
+
+#: components/footer/site-info.php:9
+msgid "Theme: %1$s by %2$s."
+msgstr "Theme: %1$s by %2$s."
+
+#: comments.php:85
+msgid "Comments are closed."
+msgstr "Comments are closed."
+
+#: comments.php:51 comments.php:72
+msgid "Newer Comments"
+msgstr "Newer Comments"
+
+#: comments.php:50 comments.php:71
+msgid "Older Comments"
+msgstr "Older Comments"
+
+#: comments.php:47 comments.php:68
+msgid "Comment navigation"
+msgstr "Comment navigation"
+
+#. translators: 1: number of comments, 2: post title
+#: comments.php:37
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s thought on &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s thoughts on &ldquo;%2$s&rdquo;"
+
+#. translators: %s: post title
+#: comments.php:33
+msgctxt "comments title"
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr "One thought on &ldquo;%s&rdquo;"
+
+#. translators: %1$s: smiley
+#: 404.php:49
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Try looking in the monthly archives. %1$s"
+
+#: 404.php:32
+msgid "Most Used Categories"
+msgstr "Most Used Categories"
+
+#: 404.php:20
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+
+#: 404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Oops! That page can&rsquo;t be found."
+
+#. Author URI of the theme
+msgid "http://wpinterface.com"
+msgstr "http://wpinterface.com"
+
+#. Author of the theme
+msgid "WPInterface"
+msgstr "WPInterface"
+
+#. Theme URI of the theme
+msgid "https://wpinterface.com/themes/advance-blog/"
+msgstr "https://wpinterface.com/themes/advance-blog/"

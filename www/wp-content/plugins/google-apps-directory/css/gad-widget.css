@@ -1,0 +1,51 @@
+
+.gad-error {
+	color: red;
+}
+
+.gad-users {
+	display: table;
+	margin: 6px 0px;
+	border-collapse: separate; 
+	border-spacing: 4px;
+}
+
+.gad-user {
+	padding: 8px;
+	display: table-row;
+}
+
+.gad-user-imgdiv {
+	display: table-cell;
+	min-width: 48px;
+}
+
+img.gad-user-img {
+	width: 48px;
+	height: 48px;
+	border-radius: 3px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.gad-user-textinfo {
+	display: table-cell;
+	
+	vertical-align: top;
+	padding: 4px;
+}
+
+.gad-user-textinfo div {
+	margin-bottom: 4px;
+	overflow-wrap: break-word;
+}
+
+.gad-user-name {
+	font-weight: bold;
+}
+
+img.gad-spinner-img {
+	border: 0px;
+	border-radius: 0px;
+	box-shadow: none;
+	margin: 6px auto;
+}

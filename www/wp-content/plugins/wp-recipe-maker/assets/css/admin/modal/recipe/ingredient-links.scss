@@ -1,0 +1,77 @@
+.wprm-admin-modal-field-ingredient-links-edit-container {
+    padding: 10px;
+    overflow: scroll;
+
+    .wprm-admin-modal-field-ingredient-links {
+        margin-bottom: 80px; // Make sure last dropdown fits.
+    }
+    .wprm-admin-modal-field-ingredient-links-link-ingredient-count {
+        font-size: 12px;
+        font-style: italic;
+        color: darkred;
+    }
+}
+
+.wprm-admin-modal-field-ingredient-links-container {
+    .wprm-admin-modal-field-container.wprm-admin-modal-field-container-link-type {
+        display: block;
+
+        .wprm-admin-modal-field-label {
+            width: 100%;
+            text-align: left;
+            padding: 0;
+        }
+    }
+
+    .wprm-admin-modal-field-ingredient-links-link-container {
+        min-height: 39px;
+        margin-bottom: 20px;
+
+        .wprm-admin-modal-field-ingredient-links-link-ingredient {
+            font-size: 16px;
+        }
+
+        input {
+            margin: 5px 0;
+        }
+    }
+}
+
+@media screen and (min-width: 782px) {
+    .wprm-admin-modal-field-ingredient-links-container {
+        .wprm-admin-modal-field-ingredient-links-link-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+
+            .wprm-admin-modal-field-ingredient-links-link-ingredient {
+                font-size: 14px;
+                flex: 0 0 200px;
+            }
+
+            .wprm-admin-modal-field-ingredient-links-link-url,
+            input {
+                flex: 1;
+                margin: 0 5px;
+            }
+
+            .wprm-admin-modal-field-ingredient-links-link-url-none {
+                opacity: 0.5;
+            }
+
+            .wprm-admin-modal-field-ingredient-links-link-nofollow {
+                flex: 0 0 205px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .wprm-admin-modal-field-ingredient-links-container {
+        .wprm-admin-modal-field-ingredient-links-link-container {
+            .wprm-admin-modal-field-ingredient-links-link-ingredient {
+                flex: 0 0 250px;
+            }
+        }
+    }
+}

@@ -1,0 +1,244 @@
+/******* For Google Map Rendering ******/
+.wp-gmap-preview .controls {
+    margin-top: 10px;
+    border: 1px solid transparent;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 32px;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.wp-gmap-preview #pac-input {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 300px;
+}
+
+.wp-gmap-preview #pac-input:focus {
+    border-color: #4d90fe;
+}
+
+.pac-container {
+    font-family: Roboto;
+    z-index: 99999;
+}
+
+#type-selector {
+    color: #fff;
+    background-color: #4d90fe;
+    padding: 5px 11px 0px 11px;
+}
+
+#type-selector label {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#target {
+    width: 345px;
+}
+
+/******* Google Map Settings ******/
+#gmap_container_inner {
+    background-color: white;
+    float: left;
+    width: 100%;
+    box-shadow: 0 0 5px darkgray;
+}
+
+.popup-content {
+    position: relative;
+    width: 60%;
+}
+
+/******* Map Nav Related ********/
+ul#wp-gmap-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0px;
+}
+
+ul#wp-gmap-nav li {
+    display: inline-block;
+    background-color: #32c896;
+    border-bottom: solid 5px #238b68;
+    color: #fff;
+    cursor: pointer;
+}
+
+ul#wp-gmap-nav li:hover, ul#wp-gmap-nav .active {
+    background-color: #238b68;
+}
+
+ul#wp-gmap-nav li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 5px 20px;
+    font-weight: bold;
+}
+
+/******* Map Tab Related ******/
+#wp-gmap-tabs .wp-gmap-tab-content {
+    display: none;
+}
+
+#wp-gmap-tabs .active {
+    display: block;
+}
+
+/******* Map List Related ******/
+.wp-gmap-list {
+    padding: 1%;
+    float: left;
+    width: 97%;
+}
+
+.wp-gmap-single {
+    padding: .2% 1%;
+    float: left;
+    width: 97%;
+    border: 1px #ccc solid;
+    margin: 7px 0px;
+    background-color: #f3f3f3;
+}
+
+.wp-gmap-single-left {
+    width: 80%;
+    float: left;
+}
+
+.wp-gmap-single-title {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px 0;
+}
+
+.wp-gmap-single-action {
+    width: 20%;
+    padding: 13px 0;
+    float: left;
+    text-align: right;
+}
+
+/******* Map Properties ******/
+.wp-gmap-properties {
+    width: 30%;
+    padding: 1%;
+    border: 1px #ccc solid;
+    background-color: #f3f3f3;
+    margin: 9px;
+    float: left;
+}
+
+.gmap_properties tr {
+    height: 50px;
+}
+
+.gmap_properties tr .regular-text {
+    width: 23em !important;
+}
+
+/******* To Preview Map ******/
+.wp-gmap-preview {
+    width: 62%;
+    padding: 1%;
+    border: 1px #ccc solid;
+    background-color: #f3f3f3;
+    margin: 9px;
+    float: left;
+}
+
+/**********To view contact form ***********/
+.srm_gmap_contact_area {
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+
+.srm_gmap_instructions {
+    width: 42%;
+    float: left;
+    margin-left: 2%;
+    padding: 10px;
+}
+
+.srm_gmap_instructions ul {
+    padding: 0;
+    margin: 0;
+}
+
+.srm_gmap_instructions ul li {
+    background-color: #f0f0f0;
+    padding: 6px;
+    border: 1px solid #e0e0e0;
+    margin: 5px 0;
+}
+
+.srm_gmap_instructions ul li:before {
+    content: '> ';
+    font-weight: bold;
+}
+
+.srm_gmap_instructions ul li:hover {
+
+}
+
+.srm_gmap_instructions ul li a {
+    text-decoration: none;
+}
+
+.srm_gmap_video_area {
+    width: 95%;
+    float: left;
+    margin-left: 2%;
+    clear: both;
+    text-align: center;
+    padding-top: 35px;
+}
+
+.wp_gmap_contact_field {
+    width: 100% !important;
+}
+
+/*updated at 06/04/2019*/
+/*Menu section*/
+.gmap_header_section {
+    width: 100%;
+}
+
+.gmap_header_section_left {
+    width: 58%;
+    float: left;
+}
+
+.gmap_header_section_right {
+    width: 40%;
+    float: left;
+}
+
+.gmap_donate_button {
+    float: left;
+    margin-top: 5px;
+}
+
+.gmap_donate_button img {
+    height: 54px;
+}
+
+.gmap_get_pro_version {
+    float: left;
+    padding: 11px 16px !important;
+    height: auto !important;
+    font-weight: bold !important;
+    margin: 5px 0 0 5px !important;
+    color: #238b68 !important;;
+}

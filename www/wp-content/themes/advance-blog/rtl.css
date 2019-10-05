@@ -1,0 +1,43 @@
+/*
+Theme Name: Advance Blog
+
+Adding support for language written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+https://codex.wordpress.org/Right_to_Left_Languagecomponentsupport
+
+*/
+
+.main-navigation .menu ul li i {
+    padding-left: 0;
+    padding-right: 10px;
+}
+
+.main-navigation .menu .menu-mobile {
+    text-align: right;
+}
+
+.main-navigation .menu .menu-mobile li a {
+    padding-left: 30px;
+}
+
+.main-navigation .menu .menu-mobile li a i {
+    left: 0;
+    right: inherit;
+}
+
+@media only screen and (min-width: 992px) {
+    .site .main-navigation .menu ul ul {
+        text-align: right;
+    }
+
+    .main-navigation .menu ul ul ul {
+        right: 100%;
+        left: inherit;
+    }
+}
+
+.style-archive .entry-header {
+    text-align: right;
+}

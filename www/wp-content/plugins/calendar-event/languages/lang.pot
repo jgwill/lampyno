@@ -1,0 +1,752 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2016-11-14 18:33+0400\n"
+"PO-Revision-Date: 2016-11-14 18:33+0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: it_IT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+msgid "Add New Event"
+msgstr ""
+
+msgid "Event Title"
+msgstr ""
+
+msgid "You can give a name for event."
+msgstr ""
+
+msgid "Required"
+msgstr ""
+
+msgid "Calendar Name"
+msgstr ""
+
+msgid "Choose that version of calendar themes, in which you want to see the Events."
+msgstr ""
+
+msgid "Start Date"
+msgstr ""
+
+msgid "Select the start of the event."
+msgstr ""
+
+msgid "End Date"
+msgstr ""
+
+msgid "Select the finish time of the event."
+msgstr ""
+
+msgid "Set external URL in the calendar, which should be included in the event."
+msgstr ""
+
+msgid "Optional"
+msgstr ""
+
+msgid "Open In New Tab"
+msgstr ""
+
+msgid "Choose, by clicking on the link should open in new tab or not."
+msgstr ""
+
+msgid "Open In Same Tab"
+msgstr ""
+
+msgid "Start Time"
+msgstr ""
+
+msgid "Select the event start time."
+msgstr ""
+
+msgid "End Time"
+msgstr ""
+
+msgid "Select the event end time."
+msgstr ""
+
+msgid "Event Color"
+msgstr ""
+
+msgid "Select that color, which you want to see for your event, which shows in the calendar."
+msgstr ""
+
+msgid "Event Color option is only for Event Calendar Type."
+msgstr ""
+
+msgid "Event Description"
+msgstr ""
+
+msgid "You can give a description for event."
+msgstr ""
+
+msgid "Event Description option is only for Simple Calendar Type."
+msgstr ""
+
+msgid "No"
+msgstr ""
+
+msgid "Actions"
+msgstr ""
+
+msgid "Click for Creating New Calendar"
+msgstr ""
+
+msgid "New Calendar"
+msgstr ""
+
+msgid "Click for Canceling"
+msgstr ""
+
+msgid "Click for Saving Settings"
+msgstr ""
+
+msgid "Click for Updating Settings"
+msgstr ""
+
+msgid "Events Quantity"
+msgstr ""
+
+msgid "Calendar Type"
+msgstr ""
+
+msgid "General Options"
+msgstr ""
+
+msgid "WeekDay Start"
+msgstr ""
+
+msgid "Background Color"
+msgstr ""
+
+msgid "Grid Color"
+msgstr ""
+
+msgid "Grid Width"
+msgstr ""
+
+msgid "Border Width"
+msgstr ""
+
+msgid "Border Style"
+msgstr ""
+
+msgid "Specify the border style: None, Solid, Dashed and Dotted."
+msgstr ""
+
+msgid "None"
+msgstr ""
+
+msgid "Solid"
+msgstr ""
+
+msgid "Dashed"
+msgstr ""
+
+msgid "Dotted"
+msgstr ""
+
+msgid "Border Color"
+msgstr ""
+
+msgid "Box Shadow Color"
+msgstr ""
+
+msgid "Max Width"
+msgstr ""
+
+msgid "Numbers Position"
+msgstr ""
+
+msgid "Header Options"
+msgstr ""
+
+msgid "Color"
+msgstr ""
+
+msgid "Font Size"
+msgstr ""
+
+msgid "Font Family"
+msgstr ""
+
+msgid "Weekday Options"
+msgstr ""
+
+msgid "Line After Weekday"
+msgstr ""
+
+msgid "Width"
+msgstr ""
+
+msgid "Style"
+msgstr ""
+
+msgid "Indicate the dividing line style: None, Solid, Dashed and Dotted."
+msgstr ""
+
+msgid "Days Options"
+msgstr ""
+
+msgid "Size"
+msgstr ""
+
+msgid "Todays Options"
+msgstr ""
+
+msgid "Number's Background Color"
+msgstr ""
+
+msgid "Hover Options"
+msgstr ""
+
+msgid "Refresh Icon Options"
+msgstr ""
+
+msgid "Arrows Options"
+msgstr ""
+
+msgid "Choose Icon"
+msgstr ""
+
+msgid "Type"
+msgstr ""
+
+msgid "Max-Width"
+msgstr ""
+
+msgid "Height"
+msgstr ""
+
+msgid "Box Shadow"
+msgstr ""
+
+msgid "Shadow Type"
+msgstr ""
+
+msgid "Shadow"
+msgstr ""
+
+msgid "Shadow Color"
+msgstr ""
+
+msgid "Calendar Part"
+msgstr ""
+
+msgid "WeekDay Options"
+msgstr ""
+
+msgid "Line After WeekDay"
+msgstr ""
+
+msgid "Event Days Options"
+msgstr ""
+
+msgid "Other Months Days Options"
+msgstr ""
+
+msgid "Event Part"
+msgstr ""
+
+msgid "Text"
+msgstr ""
+
+msgid "Body Option"
+msgstr ""
+
+msgid "Title Options"
+msgstr ""
+
+msgid "Description Options"
+msgstr ""
+
+msgid "Shortcode"
+msgstr ""
+
+msgid "Copy &amp; paste the shortcode directly into any WordPress post or page."
+msgstr ""
+
+msgid "Templete Include"
+msgstr ""
+
+msgid "Copy &amp; paste this code into a template file to include the calendar within your theme."
+msgstr ""
+
+msgid "This is the widget of Total Soft Calendar plugin"
+msgstr ""
+
+msgid "Jan"
+msgstr ""
+
+msgid "Feb"
+msgstr ""
+
+msgid "Mar"
+msgstr ""
+
+msgid "Apr"
+msgstr ""
+
+msgid "May"
+msgstr ""
+
+msgid "June"
+msgstr ""
+
+msgid "July"
+msgstr ""
+
+msgid "Aug"
+msgstr ""
+
+msgid "Sep"
+msgstr ""
+
+msgid "Oct"
+msgstr ""
+
+msgid "Nov"
+msgstr ""
+
+msgid "Dec"
+msgstr ""
+
+msgid "Sun"
+msgstr ""
+
+msgid "Sunday"
+msgstr ""
+
+msgid "Mon"
+msgstr ""
+
+msgid "Monday"
+msgstr ""
+
+msgid "Tue"
+msgstr ""
+
+msgid "Wed"
+msgstr ""
+
+msgid "Thu"
+msgstr ""
+
+msgid "Fri"
+msgstr ""
+
+msgid "Sat"
+msgstr ""
+
+msgid "January"
+msgstr ""
+
+msgid "February"
+msgstr ""
+
+msgid "March"
+msgstr ""
+
+msgid "April"
+msgstr ""
+
+msgid "August"
+msgstr ""
+
+msgid "September"
+msgstr ""
+
+msgid "October"
+msgstr ""
+
+msgid "November"
+msgstr ""
+
+msgid "December"
+msgstr ""
+
+msgid "Back To This Month"
+msgstr ""
+
+msgid "Back To Month View"
+msgstr ""
+
+msgid "Calendar"
+msgstr ""
+
+msgid "Calendar Manager"
+msgstr ""
+
+msgid "Event Manager"
+msgstr ""
+
+msgid "Could not load the localization file: "
+msgstr ""
+
+msgid "Update"
+msgstr ""
+
+msgid "Save"
+msgstr ""
+
+msgid "Cancel"
+msgstr ""
+
+msgid "Define the calendar name, in which, the events should be placed."
+msgstr ""
+
+msgid "Define the calendar type, in which, the events should be placed."
+msgstr ""
+
+msgid "Event Calendar"
+msgstr ""
+
+msgid "Simple Calendar"
+msgstr ""
+
+msgid "Select that day in the calendar, which must be the first in the week."
+msgstr ""
+
+msgid "Choose main background color in calendar."
+msgstr ""
+
+msgid "Select grid color which divide the days in the calendar."
+msgstr ""
+
+msgid "Select the grid width, you can choose it corresponding  to your calendar."
+msgstr ""
+
+msgid "Define the main border width."
+msgstr ""
+
+msgid "Select the main border color."
+msgstr ""
+
+msgid "Select shadow color, which allows to show the shadow color of the calendar."
+msgstr ""
+
+msgid "Define the calendar width."
+msgstr ""
+
+msgid "Mention, the days in calendar must be from right or from left."
+msgstr ""
+
+msgid "Left"
+msgstr ""
+
+msgid "Right"
+msgstr ""
+
+msgid "Choose a background color, where can be seen the year and month."
+msgstr ""
+
+msgid "Choose a text color, where can be seen the year and month."
+msgstr ""
+
+msgid "Choose a background color for weekdays."
+msgstr ""
+
+msgid "Determine the weeks and days dividing line width."
+msgstr ""
+
+msgid "Select the background for days of the calendar."
+msgstr ""
+
+msgid "Select the color of the numbers."
+msgstr ""
+
+msgid "Note the size of the numbers, it is fully responsive."
+msgstr ""
+
+msgid "Note the background color of the day."
+msgstr ""
+
+msgid "Choose the date color, that will be displayed."
+msgstr ""
+
+msgid "Select the background color of the day, it is designed for the frame."
+msgstr ""
+
+msgid "Determine the background color of the hover option, without clicking you can change the background color of the day."
+msgstr ""
+
+msgid "Determine the color of the hover's letters."
+msgstr ""
+
+msgid "Choose a color for updating icon, which has intended to return to the calendar from the events."
+msgstr ""
+
+msgid "Choose a size for updating icon, which has intended to return to the calendar from the events."
+msgstr ""
+
+msgid "Select the right and the left icons, which are for change the months by sequence."
+msgstr ""
+
+msgid "Select a color of the icon."
+msgstr ""
+
+msgid "Set the size."
+msgstr ""
+
+msgid "Define the calendar height."
+msgstr ""
+
+msgid "Choose to show the boxshadow or no."
+msgstr ""
+
+msgid "Yes"
+msgstr ""
+
+msgid "Select the shadow type."
+msgstr ""
+
+msgid "Choose the shadow size for the calendar."
+msgstr ""
+
+msgid "Select a background color, where can be seen the year and month."
+msgstr ""
+
+msgid "Select a text color, where can be seen the year and month."
+msgstr ""
+
+msgid "Choose the calendar font family of the year and month."
+msgstr ""
+
+msgid "Select the calendar text color for the weekdays."
+msgstr ""
+
+msgid "Set the calendar text size for the weekdays."
+msgstr ""
+
+msgid "Choose the font family of the weekdays."
+msgstr ""
+
+msgid "Choose the color according to your preference."
+msgstr ""
+
+msgid "Note the background color of the current day."
+msgstr ""
+
+msgid "Choose the current date color, that will be displayed."
+msgstr ""
+
+msgid "Set the size of the numbers by pixels."
+msgstr ""
+
+msgid "Select the background for event days."
+msgstr ""
+
+msgid "Select the right and the left icons for calendar, which are for change the months by sequence."
+msgstr ""
+
+msgid "Set the size for icon."
+msgstr ""
+
+msgid "Select the background color for the other months days on the calendar."
+msgstr ""
+
+msgid "Choose the text color of the other months days."
+msgstr ""
+
+msgid "Select the size for the other months days on the calendar."
+msgstr ""
+
+msgid "Choose the background color of event part header, where can be seen the events main title."
+msgstr ""
+
+msgid "Choose the text color of event part header, where can be seen the events main title."
+msgstr ""
+
+msgid "Set the text size by pixel."
+msgstr ""
+
+msgid "Choose the font family."
+msgstr ""
+
+msgid "You can write events main title."
+msgstr ""
+
+msgid "Choose a background color for events."
+msgstr ""
+
+msgid "Choose the color for the event title in the calendar."
+msgstr ""
+
+msgid "Choose the font family for the title."
+msgstr ""
+
+msgid "Choose the font size of the event title."
+msgstr ""
+
+msgid "Choose the color for the event description in the calendar."
+msgstr ""
+
+msgid "Choose the font family of the description."
+msgstr ""
+
+msgid "Set the text size for the description."
+msgstr ""
+
+msgid "Body Options"
+msgstr ""
+
+msgid "Create Event"
+msgstr ""
+
+msgid "Click for Creating New Event"
+msgstr ""
+
+msgid "Flexible Calendar"
+msgstr ""
+
+msgid "Line After Header"
+msgstr ""
+
+msgid "Close Icon Options"
+msgstr ""
+
+msgid "Link Options"
+msgstr ""
+
+msgid "Event Image/Video"
+msgstr ""
+
+msgid "You can give Image or Video for event."
+msgstr ""
+
+msgid "Event Image or Video option is only for Flexible Calendar Type."
+msgstr ""
+
+msgid "Link Text"
+msgstr ""
+
+msgid "Possibility define the calendar width."
+msgstr ""
+
+msgid "Can choose main background color."
+msgstr ""
+
+msgid "Select the body border color."
+msgstr ""
+
+msgid "Select the main top border color."
+msgstr ""
+
+msgid "Choose the calendar font size of the month."
+msgstr ""
+
+msgid "Choose the calendar font size of the year."
+msgstr ""
+
+msgid "Choose position for the month and year."
+msgstr ""
+
+msgid "Select the main top border width."
+msgstr ""
+
+msgid "Select the calendar text color for the month."
+msgstr ""
+
+msgid "Select the calendar text color for the year."
+msgstr ""
+
+msgid "Select a hover color of the icon."
+msgstr ""
+
+msgid "Determine the header line width."
+msgstr ""
+
+msgid "Select the background color for days of the calendar."
+msgstr ""
+
+msgid "Select the event color for days."
+msgstr ""
+
+msgid "Select the event hover color for days."
+msgstr ""
+
+msgid "Choose date format."
+msgstr ""
+
+msgid "Select the main top border color for the event."
+msgstr ""
+
+msgid "Select the main top border width for the event."
+msgstr ""
+
+msgid "Choose the font family for event in the calendar."
+msgstr ""
+
+msgid "Choose the font size for event in the calendar."
+msgstr ""
+
+msgid "Select the close icons for calendar, which has intended to return to the calendar from the events."
+msgstr ""
+
+msgid "Choose a color for close icon, which has intended to return to the calendar from the events."
+msgstr ""
+
+msgid "Choose a hover color for close icon, which has intended to return to the calendar from the events."
+msgstr ""
+
+msgid "Determine the line width for the events."
+msgstr ""
+
+msgid "Select the body border color in the event."
+msgstr ""
+
+msgid "Choose a background color for events title."
+msgstr ""
+
+msgid "Left, Right & Center - Determine the alignment of the event title."
+msgstr ""
+
+msgid "Select the width for Video (YouTube and Vimeo) or Image, you can choose it corresponding to your calendar."
+msgstr ""
+
+msgid "Choose position for the Video and Image in event."
+msgstr ""
+
+msgid "Choose the color for the event link in the calendar."
+msgstr ""
+
+msgid "Choose the hover color for the event link in the calendar."
+msgstr ""
+
+msgid "Choose position for the link in event."
+msgstr ""
+
+msgid "You can write link text."
+msgstr ""
+
+msgid "Determine the line width."
+msgstr ""
+
+msgid "Set the text font size for the link button of the event."
+msgstr ""
+
+msgid "Choose the font family for the link button."
+msgstr ""
+
+msgid "Determine the border color, which is designed for Link button."
+msgstr ""
+
+msgid "Set the border width for the link buttons."
+msgstr ""
+
+msgid "Install the border radius for event link. "
+msgstr ""
+
+msgid "Border Radius"
+msgstr ""
+
+msgid "No Events"
+msgstr ""

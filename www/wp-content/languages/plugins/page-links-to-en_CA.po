@@ -1,0 +1,126 @@
+# Translation of Plugins - Page Links To - Stable (latest release) in English (Canada)
+# This file is distributed under the same license as the Plugins - Page Links To - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2018-07-24 18:15:01+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: en_CA\n"
+"Project-Id-Version: Plugins - Page Links To - Stable (latest release)\n"
+
+#: templates/quick-add.php:26
+msgid "You should customize this short URL to make it shorter and more memorable!"
+msgstr "You should customize this short URL to make it shorter and more memorable!"
+
+#: templates/quick-add.php:25
+msgid "page-title"
+msgstr "page-title"
+
+#: templates/quick-add.php:25
+msgid "Short URL"
+msgstr "Short URL"
+
+#: templates/quick-add.php:21
+msgid "URL"
+msgstr "URL"
+
+#: templates/quick-add.php:17
+msgid "Page Title"
+msgstr "Page Title"
+
+#: templates/quick-add.php:17
+msgid "Title"
+msgstr "Title"
+
+#: templates/quick-add.php:9
+msgid "Sorry, your browser does not support copying."
+msgstr "Sorry, your browser does not support copying."
+
+#: templates/quick-add.php:8
+msgid "Copied to Clipboard!"
+msgstr "Copied to Clipboard!"
+
+#: classes/plugin.php:1036
+msgid "Linked URL"
+msgstr "Linked URL"
+
+#: classes/plugin.php:1002
+msgid "Links to:"
+msgstr "Links to:"
+
+#: classes/plugin.php:843
+msgid "Page link draft saved!"
+msgstr "Page link draft saved!"
+
+#: classes/plugin.php:843
+msgid "New page link published!"
+msgstr "New page link published!"
+
+#: classes/plugin.php:383
+msgid "Add Page Link"
+msgstr "Add Page Link"
+
+#: classes/plugin.php:355
+msgid "Copy Short URL"
+msgstr "Copy Short URL"
+
+#: classes/plugin.php:337
+msgid "Page Link"
+msgstr "Page Link"
+
+#: classes/plugin.php:912
+msgid "No thanks"
+msgstr "No thanks"
+
+#: classes/plugin.php:912
+msgid "Give Me Updates"
+msgstr "Give Me Updates"
+
+#. Author URI of the plugin
+msgid "https://coveredweb.com/"
+msgstr "https://coveredweb.com/"
+
+#. Author of the plugin
+msgid "Mark Jaquith"
+msgstr "Mark Jaquith"
+
+#. Description of the plugin
+msgid "Allows you to point WordPress pages or posts to a URL of your choosing.  Good for setting up navigational links to non-WP sections of your site or to off-site resources."
+msgstr "Allows you to point WordPress pages or posts to a URL of your choosing.  Good for setting up navigational links to non-WP sections of your site or to off-site resources."
+
+#. Plugin URI of the plugin
+msgid "http://txfx.net/wordpress-plugins/page-links-to/"
+msgstr "http://txfx.net/wordpress-plugins/page-links-to/"
+
+#. Plugin Name of the plugin
+#: classes/plugin.php:911
+msgid "Page Links To"
+msgstr "Page Links To"
+
+#: classes/plugin.php:983
+msgid "<strong>Note</strong>: This content is pointing to a custom URL. Use the &#8220;Page Links To&#8221; box to change this behavior."
+msgstr "<strong>Note</strong>: This content is pointing to a custom URL. Use the &#8220;Page Links To&#8221; box to change this behavior."
+
+#: classes/plugin.php:507
+msgid "Open this link in a new tab"
+msgstr "Open this link in a new tab"
+
+#: classes/plugin.php:504
+msgid "A custom URL"
+msgstr "A custom URL"
+
+#: classes/plugin.php:503
+msgid "Its normal WordPress URL"
+msgstr "Its normal WordPress URL"
+
+#: classes/plugin.php:502
+msgid "Point this content to:"
+msgstr "Point this content to:"
+
+#: classes/plugin.php:449
+msgctxt "Meta box title"
+msgid "Page Links To"
+msgstr "Page Links To"

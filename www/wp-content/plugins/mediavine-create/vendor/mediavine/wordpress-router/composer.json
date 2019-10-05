@@ -1,0 +1,55 @@
+{
+  "name": "mediavine/wordpress-router",
+  "type": "package",
+  "description": "A sane interface for working with API routes and page rewrites.",
+  "keywords": [
+    "wordpress",
+    "wordpress api",
+    "wordpress rest",
+    "route"
+  ],
+  "require-dev": {
+    "squizlabs/php_codesniffer": "2.*",
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.4.3",
+    "wp-coding-standards/wpcs": "^0.14.0",
+    "phpunit/phpunit": "^5"
+  },
+  "license": "GPL2",
+  "authors": [
+    {
+      "name": "Mediavine",
+      "email": "developers@mediavine.com"
+    },
+    {
+      "name": "John-Michael L'Allier",
+      "email": "jmlallier@me.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Mediavine\\WordPress\\": [
+        "src/"
+      ]
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Mediavine\\WordPress\\Router\\Tests\\": [
+        "tests/"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "require": {
+    "mediavine/wordpress-support": "dev-master"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:mediavine/wordpress-support.git"
+    }
+  ]
+}

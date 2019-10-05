@@ -1,0 +1,1290 @@
+[aw2_mo parameters parent_ref]
+	complex parameters
+[/aw2_mo]
+
+Local 
+	- Search for local parameters
+	- search in objects
+
+	
+
+http://jedfoster.com/Readmore.js/
+
+
+$(document).ready(function() {
+    var showChar = 100;
+    var ellipsestext = "...";
+    var moretext = "more";
+    var lesstext = "less";
+    $('.more').each(function() {
+        var content = $(this).html();
+ 
+        if(content.length > showChar) {
+ 
+            var c = content.substr(0, showChar);
+            var h = content.substr(showChar-1, content.length - showChar);
+ 
+            var html = c + '<span class="moreellipses">' + ellipsestext+ ' </span><span class="morecontent"><span>' + h + '</span>  <a href="" class="morelink">' + moretext + '</a></span>';
+ 
+            $(this).html(html);
+        }
+ 
+    });
+ 
+    $(".morelink").click(function(){
+        if($(this).hasClass("less")) {
+            $(this).removeClass("less");
+            $(this).html(moretext);
+        } else {
+            $(this).addClass("less");
+            $(this).html(lesstext);
+        }
+        $(this).parent().prev().toggle();
+        $(this).prev().toggle();
+        return false;
+    });
+});
+
+
+
+The SPA Library
+======================================
+
+You can access the SPA library using
+[aw2_spa spa_activity='activityname' relevant parameters]
+spa_activity: the command to run. Always of the format libname:function
+
+All spa_activity must be inside a class called spa_main otherwise it will not work
+
+<section class='.spa_main'>
+	[aw2_spa spa_activity='core:run_script' lib='a,b,c' set_defaults='true' /]
+		alert('hell');
+	[/aw2_spa]
+</section>
+
+document.ready will fail because SPA loads pages using Ajax.
+
+
+Overall Flow of SPA
+=====================================
+
+
+When the first page is loaded
+--------------------------------
+Step 1: Body is Faded
+Step 2: Spinner is Shown
+Step 3: The Page is cached for future calls. The cache is same as the URL
+Step 4: Backbone.js, Underscore.js and aw2_spa is loaded
+Step 5: Spinner is Hidden
+Step 6: Body is Made Visible
+Step 7: All the spa_activity within .spa_main are executed 
+Step 8: If there is Google Analytics a pageview is fired
+
+
+When get_spa_uri is called
+--------------------------------
+Step 1: spinner library is shown. You can choose the spinner library. See get_spa_uri 
+Step 2: If the uri is already available in cache then the cache value is retrieved 
+
+Step 3: Not in cache: All the data to be sent to server is collected. See collect_data to see what all is sent to the server
+Step 4: Not in Cache: Post Request to the server. See get_spa_uri on the uri which is requested
+Step 5: The URL of the browser is updated to the New URL which is retrieved
+Step 6: The Page is cached for future calls. The cache is same as the URL
+Step 7: The .spa_main is replaced with the new .spa_main . This destroys all the data of the previous page including data, models and events .
+The js and css will remain as they are loaded at an app level
+Step 8: The spa_main is unhidden and faded from transparent to opaque
+Step 9: spinner library is hidden. You can choose the spinner library. See get_spa_uri 
+Step 10: If there is Google Analytics a pageview is fired
+Step 11: All the spa_activity within .spa_main are executed 
+Step 12: The Page is scrolled to the top. To overwrite See get_spa_uri 
+
+When a page is retrieved from history - previous and next button
+--------------------------------
+Step 1: spinner library is shown. You can choose the spinner library. See get_spa_uri 
+Step 2: If the uri is already available in cache then the cache value is retrieved 
+Step 3: Not in cache: No data is sent to the server
+Step 4: Not in Cache: Post Request to the server. See get_spa_uri on the uri which is requested
+Step 5: The URL of the browser is Not repeat Not updated since it is History
+Step 6: The Page is cached for future calls. The cache is same as the URL
+Step 7: The .spa_main is replaced with the new .spa_main . This destroys all the data of the previous page including data, models and events .
+The js and css will remain as they are loaded at an app level
+Step 8: The spa_main is unhidden and faded from transparent to opaque
+Step 9: spinner library is hidden. You can choose the spinner library. See get_spa_uri 
+Step 10: If there is Google Analytics a pageview is fired
+Step 11: All the spa_activity within .spa_main are executed 
+Step 12: The Page is scrolled to the top. To overwrite See get_spa_uri 
+
+
+
+Execution Steps for one spa_activity 
+--------------------
+These are the Execution steps for any spa_activity. With fancybox as example.
+[aw2_spa spa_activity='fancybox:close' lib='a,b,c' set_defaults='true' /]
+
+Step 1: If any libraries are mention will load the libraries. lib='a,b,c'
+Step 2: If set_defaults=true then will fire the set_defaults command of all the dependancy libraries
+Step 3: Will look for the spa_activity command eg fancybox:close and load the library. Will load fancybox
+Step 4: If set_defaults=true then will fire the set_defaults command of fancybox
+Step 5: Will fire the command mentioned. Will fire fancybox.close() . If you just want to load then say fancybox:load . If you just want to set defaults say fancybox:set_defaults
+
+There is only one exception
+[aw2_spa spa_activity='core:run_script' lib='a,b,c' set_defaults='true' /]
+	alert('hell');
+[/aw2_spa]
+This command adds a Step 6 at the end
+Step 6: Fire the javascript command mentioned after all the relevant libraries are loaded
+
+
+Working with js or css libraries
+========================================
+
+Defining a library
+----------------------
+You can define a library in theme-js-definitions.
+There are already many definitions for common libraries. You can define libraries as per your project
+You can define multiple css and js files.
+cdnjs and cdncss is used in preference to css and js.
+Incase of localhost css and js is given preference.
+Use cdnjs.com for finding cdn hosted libraries
+//fancybox
+spa_libs.get('core').new_lib({
+	lib:'libname',
+	cdnjs:'js1,js2,js3',
+	js:'js1,js2,js3',
+	cdncss:'css1,css2,css3',
+	css:'css1,css2,css3',
+	set_defaults: function(){Any default settings after library is loaded. Leave the parameter out if none}
+})
+
+
+//fancybox
+spa_libs.get('core').new_lib({
+	lib:'fancybox',
+	cdnjs:'//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js',
+	js:'fancybox/jquery.fancybox.pack.js',
+	cdncss:'//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css',
+	css:'fancybox/jquery.fancybox.css',
+	set_defaults: function(){$('.fancybox').fancybox();}
+})
+
+spa_libs.get('fancybox').show_content=function(obj){
+	var model=obj.model;
+	$.fancybox.close();
+	if(model.has("html_selector"))
+		htmlcontent=$(model.get('content')).find(model.get("html_selector")).html(); 
+	else
+		htmlcontent=$(model.get('content')).html(); 
+	$.fancybox.open(htmlcontent); 
+}
+
+spa_libs.get('fancybox').close=function(obj){
+		$.fancybox.close();
+}
+
+Defining functions for a library
+-----------------------------------
+You can define additional functions for any library including core.
+
+spa_libs.get('fancybox').close=function(obj){
+		$.fancybox.close();
+}
+
+spa_libs.get('fancybox').show_content=function(obj){
+	var model=obj.model;
+	$.fancybox.close();
+	if(model.has("html_selector"))
+		htmlcontent=$(model.get('content')).find(model.get("html_selector")).html(); 
+	else
+		htmlcontent=$(model.get('content')).html(); 
+	$.fancybox.open(htmlcontent); 
+}
+
+spa_libs.get('core').alert=function(obj){
+	alert(obj.model.get('message'));
+}
+
+Loading a Library
+--------------------------
+A library can be loaded using the libname:load command. All functions automatically load the library before firing the command so this line is not required if you are firing a command after load 
+[aw2_spa spa_activity='fancybox:load' /]
+
+[aw2_spa spa_activity='fancybox:set_defaults' /] will load the library and set the default parameters
+
+[aw2_spa spa_activity='fancybox:show_content' /] does not require a load command. It will check that the library is loaded.
+
+Setting up the library with default settings
+--------------------------------------------
+This will load the library and then execute the set_defaults function. Use set_defaults to do the default settings or bindings.
+[aw2_spa spa_activity='fancybox:set_defaults' /]
+
+Eg Definition with set_defaults
+spa_libs.get('core').new_lib({
+	lib:'fancybox',
+	cdnjs:'//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js',
+	js:'fancybox/jquery.fancybox.pack.js',
+	cdncss:'//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css',
+	css:'fancybox/jquery.fancybox.css',
+	set_defaults: function(){$('.fancybox').fancybox();}
+})
+
+
+Running a predefined function for a library
+-----------------------------------------------
+This will load the library and then fire the fancybox.close() function. You can pass any parameters.
+All parameters will be available in obj.model of the definition.
+
+[aw2_spa spa_activity='fancybox:close' /]
+
+This will load the library, run the set_defaults and then run the close() func
+[aw2_spa spa_activity='fancybox:close' set_defaults=true /]
+
+
+Running a non defined function
+-------------------------------
+This will load the library and then run the javascript 
+
+[aw2_spa spa_activity='core:run_script' lib='fancybox']
+	$.fancybox.open()
+[/aw2_spa]
+
+
+Loading Multiple libraries
+---------------------------------
+This will load the libraries a,b,c and then run the script
+	[aw2_spa spa_activity='core:run_script' lib='a,b,c']
+		alert('all libraries loaded')
+	[/aw2_spa]
+
+This will load the dependancies, load fancybox and then fire the command	
+	[aw2_spa spa_activity='fancybox:load' lib='dependancy1, dependancy2' /]
+
+
+
+Core Library
+============================================
+
+Get and Set Page Level Data
+-----------------------------
+Get and Set any Page level Data. Will get destroyed after call to get_spa_uri
+[aw2_spa spa_activity='core:set_spa_data' key='service' value='analytics' default='small-business' /]
+
+The Default Values are stored. And incase you pass a empty value the default value is used
+[aw2_spa spa_activity='core:set_spa_data' key='shop_posts' value='30' default='20' /]
+[aw2_spa spa_activity='core:set_spa_data' key='shop_posts' value='' /]
+
+
+[aw2_spa spa_activity='core:get_spa_data' key='service' default='small-business' /]
+
+
+Building URLs on the client Side
+---------------------------------
+Build URLs and push into history to allow back and forward. 
+
+Important to prevent having to open in a new window
+Allows you to create urls after ajax calls like : next page/ load more etc
+You can put a link like Back to Search Results using  window.history.back()
+
+Set the Parts of the URL as page level data. 
+[aw2_spa spa_activity='core:set_spa_data' key='service' value='analytics' default='small-business' /]
+[aw2_spa spa_activity='core:set_spa_data' key='city' value='pune' default='india' /]
+
+[aw2_spa spa_activity='core:set_spa_data' key='shop_posts' value='30' default='20' /]
+[aw2_spa spa_activity='core:set_spa_data' key='shop_posts' value='' /]
+
+You can then send a parameterised url to set_history_url to the resolved url
+[aw2_spa spa_activity='core:set_history_url' url='http://localhost/version2/business-services/{service}-in-{city}/f/shop_posts:{shop_posts}']
+
+Running a Script Safely
+----------------------------
+[aw2_spa spa_activity='core:run_script']
+	alert('hell');
+[/aw2_spa]
+
+For full details see core:run_script
+This will get executed everytime the page is loaded or retrieved from cache
+
+Handling Load More
+------------------------
+
+Handling Search and URL Changes
+---------------------------------
+
+
+core:set_document_title
+-----------------------
+set the document title on the client side
+[aw2_spa spa_activity='core:set_document_title'] 
+	[aw2_value post_title]   
+[/aw2_spa]
+
+
+core:set_history_url
+-----------------------
+set the history url
+[aw2_spa spa_activity='core:set_history_url' url='{{aw2_value url}}' /]
+
+You can also give it a parameterised url. See Building URLs on the client Side
+[aw2_spa spa_activity='core:set_history_url' url='http://localhost/version2/business-services/{service}-in-{city}/f/shop_posts:{shop_posts}']
+
+
+core:run_script
+----------------------
+[aw2_spa spa_activity='core:run_script' lib='fancybox' set_defaults='true']
+	$('.spa_main').on('click','.a-full-article',function(){
+	   $.fancybox.open($('#inline1'))
+		return false;
+	})
+[/aw2_spa]
+See Execution Steps for the complete flow of core:run_script
+
+core:insert_html
+-----------------
+Inserts HTML Content into the DOM
+
+html_selector: Selects the HTML Block from the HTML Block. It selects the inner HTML
+target_selector: Where to put the HTML Block
+append: 'true'/'false': Will append or overwrite the block
+
+[aw2_spa spa_activity='core:insert_html' target_selector='.content_here']
+
+
+core:replace_html
+-----------------------
+Replace the HTML Block in the DOM with the new Block in the same place. It selects the outer HTML
+html_selector: The html Selector. It should be there both in the Body and also in the content
+
+[aw2_spa spa_activity='core:replace_html' html_selector='.main']
+
+
+core:get_spa_uri
+-------------------------
+Gets a uri from the Server. The uri must be unique and return the same value on every call.
+The uri will get cached and will not be called again till the page is refreshed.
+This is not an admin-ajax call. It is a direct call.
+Once the data is returned it will replace the current <div class=spa_main></div> with the incoming  <div class=spa_main></div>
+See Overall Flow of SPA for detailed flow
+
+[aw2_spa spa_activity='core:get_spa_uri' when='on_event' bind_event='click' bind_selector='.back_results' uri='http://localhost/version2/aw_block/spa_home'/ spinner_lib='spinkit' scroll='.portfolio']
+
+On the server you will get in the request
+spa_call=true
+spa_uri=true
+
+
+It will look for the URI to call in the following places:
+Against the spa_activity
+Against the Bound element (data-uri)
+the href element if the bound element is 'a' tag
+
+when='on_event' bind_event='click' bind_selector='.back_results' will bind the event to the button or link
+uri : The uri to call
+spinner_lib: The spinner lib to show or hide
+scroll: Where to scroll to when the page is loaded. defaults to .spa_main
+
+
+core:get_ajax_uri
+-------------------------
+This is to get a block of content. Eg getting more content for Read More 
+The uri will get cached and will not be called again till the page is refreshed.
+This is not an admin ajax call. It is a direct call.
+
+[aw2_spa spa_activity='core:get_ajax_uri' when='on_event' bind_event='click' bind_selector='.back_results' uri='http://localhost/version2/hello-world/f/content:true']
+
+On the server you will get in the request
+spa_call=true
+ajax=true
+
+The parameters are same as get_spa_uri .
+
+
+core:get_ajax
+-------------------------
+It is an ajax call through admin ajax.
+It will not be cached and will be called everytime.
+
+[aw2_spa spa_activity='core:get_ajax' when='on_event' bind_event='click' bind_selector='.load_more' slug='search-results']
+
+On the server you will get in the request
+ajax=true
+
+A slug is required. The slug must be available in aw_block CPT.
+
+
+
+External Libraries
+==========================================
+
+Integrating Google Analytics with SPA
+-----------------------------------------
+Add the tracking id to theme-js-definitions 
+Add the Definition to theme-js-definitions
+
+
+//google-analytics
+  [aw2_if_logged_in no role='admin']
+  	window.ga_tracking_id='UA-18881107-1';
+    spa_libs.get('core').new_lib({
+    	lib:'google_analytics',
+    	cdnjs:'//www.google-analytics.com/analytics.js',
+    	set_defaults: function(){
+      	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    		ga('create', window.ga_tracking_id, {
+    'cookieDomain': 'none'
+  });	
+    	}
+    })
+    
+  spa_libs.get('google_analytics').pageview=function(obj){
+  
+  		ga('set', 'title' , obj.model.get('title'));	
+  		ga('set', 'page' , obj.model.get('page'));	
+  		ga('send', 'pageview');	
+  }
+  
+  spa_libs.get('google_analytics').event=function(obj){
+  debugger;
+      var model=obj.model;
+  		ga('send', 'event',model.get('category'), model.get('action'), model.get('label'), Number(model.get('value')));	
+  }
+  [/aw2_if_logged_in]
+
+The system will track the following automatically in non admin model -
+When a Page is loaded directly in the Browser.
+When a Page is loaded through get_spa_uri
+
+For other cases use
+[aw2_spa spa_activity='google_analytics:pageview' when='on_event' bind_event='click' bind_selector='.js-google-event'  title='page1' page='/page1'/]
+
+For Tracking Use
+[aw2_spa spa_activity='google_analytics:event' when='on_event' bind_event='click' bind_selector='.js-google-event'   category='ad' action='click' label='myad' value=0/]
+
+Imp: If you bind more events to the button other than google_analytics than do the following
+Always use a different selector for google_analytics . Preferable is .js-google-event
+Always put that as the first event to bind. Bind other events later
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?php
+
+$args = array(
+
+	// Normal query goes here //
+
+	'no_found_rows' => true, // counts posts, remove if pagination required
+	'update_post_term_cache' => false, // grabs terms, remove if terms required (category, tag...)
+	'update_post_meta_cache' => false, // grabs post meta, remove if post meta required
+);
+
+$loop = new WP_Query( $args );
+
+	
+Testing on localhost
+
+In some cases you might want to test analytics.js from a webserver running on localhost. To set analytics.js cookies, you need to disable the default cookie domain using:
+
+ga('create', 'UA-XXXX-Y', {
+  'cookieDomain': 'none'
+});
+
+Track PageView
+Track Events
+
+Trace Debugging
+
+Trace debugging will output more verbose information to the console. To enabled trace debugging, use https://www.google-analytics.com/analytics_debug.js and this line of code before the snippet.
+
+window.ga_debug = {trace: true};
+
+Event Tracking
+event_track 
+https://developers.google.com/analytics/devguides/collection/analyticsjs/events
+ga_Category
+ga_Action
+ga_Label
+ga_Value
+
+https://developers.google.com/analytics/devguides/collection/analyticsjs/single-page-applications
+
+Start from any page
+
+<div class="spinner">
+  <div class="bounce1"></div>
+  <div class="bounce2"></div>
+  <div class="bounce3"></div>
+</div>
+
+.spinner {
+  margin: 100px auto 0;
+  width: 70px;
+  text-align: center;
+}
+
+.spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: #333;
+
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
+  animation: bouncedelay 1.4s infinite ease-in-out;
+  /* Prevent first frame from flickering when animation starts */
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0.0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes bouncedelay {
+  0%, 80%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 40% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+
+search page
+http://smejoinup.com/business-services/{service name}-in-{india}/f/shop_posts:20/portfolio_posts:10
+
+eg Setting up details for city
+[aw2_set_param city_display_slug='{{aw2_request city}}' default='india']
+
+[aw2_set_param from_request='city' assume_empty='india']
+Will give a param city with the value of pune or empty
+
+Getting title of the city for display purposes
+[aw2_query_term name query_by='slug' query_value='{{aw2_param city}}' taxonomy='city' set_param='city_title']
+[aw2_set_param city_title='India' empty='{{aw2_param city_title}}']
+
+
+calc city:
+[aw2_set_param from_request='city' assume_empty='india']
+
+calc service
+[aw2_set_param from_request='service' assume_empty='business-services']
+
+calc: shop_posts
+[aw2_set_param from_request='shop_posts' default='10']
+
+calc shop_offset: 
+[aw2_set_param from_request='shop_offset' default='0']
+
+
+[aw2_set_param from_request='city' assume_empty='india']
+[aw2_query_term name query_by='slug' query_value='{{aw2_param city}}' taxonomy='city' set_param='city_title']
+[aw2_set_param city_url='{{aw2_request city}}' default='india']
+
+
+[aw2_query_terms taxonomy='city' id='city_list']
+  {}
+[/aw2_query_terms]  					
+[aw2_spa spa_activity='bootstrap_select:set_defaults' /]
+<select style="text-align:left" class='selectpicker' id='city_temp' data-group='search'>
+	<option value=''>Select City</option>
+	[aw2_collection id='city_list' options option_value='slug' option_display='name' option_selected='{{aw2_param city}}']
+</select>
+  
+[aw2_query slug='business-shop-query' query_id='search-business-shop_2' posts_per_page='-1' city='{{aw2_param city}}' query_type='wp_query'/]
+
+count of vendors: [aw2_collection id='search-business-shop_2' count/] 
+
+
+
+[aw2_query_posts part=main]
+{
+	"posts_per_page": [aw2_param shop_posts],
+	"post_type": "business-shop",
+	"post_status": "publish",
+	"offset": 0
+}
+[/aw2_query_posts]
+[aw2_query_posts part=tax_query]
+{
+	"taxonomy": "plan",
+	"terms": "recommended",
+	"field": "slug"
+}
+[/aw2_query_posts]
+
+After the query
+	found_posts: 100
+	posts_per_page: 10
+	offset: 20   next_offset: current offset + posts_per_page
+
+	[aw2_spa spa_activity='core:update_load_more']
+
+
+	// Load more	
+	corelib.load_more=function(obj){
+		var d1 = $.Deferred();
+		var model=obj.model;
+		var $bound_element=obj.$bound_element
+
+		var found_posts=parseInt(spa_libs.get('core').if_prop('found_posts',obj));
+		var posts_per_page=parseInt(spa_libs.get('core').if_prop('posts_per_page',obj));
+		var offset=parseInt(spa_libs.get('core').if_prop('offset',obj));
+
+		if (offset>=found_posts){
+			fire=false;
+		}
+		pageno++;
+		model.set('append','true');
+		model.set('pageno',pageno);
+
+		if(pageno>=max_num_pages){
+			$(spa_libs.get('core').if_prop('disable_selector',obj)).attr("disabled", "disabled");
+			$(spa_libs.get('core').if_prop('disable_selector',obj)).filter('a').fadeTo("fast", .5).removeAttr("href");
+		}
+
+		if(fire==true){
+			//show spinner library
+			spa_libs.get('core').if_prop('spinner_lib',obj,function(spinner_lib){
+				spa_libs.get(spinner_lib).load().done(function(){spa_libs.get(spinner_lib).show(obj)})
+			})
+			
+			var str=spa_libs.get('core').collect_data(model,$bound_element);		
+			str+='&ajax=true&load_more=true'
+			var promise=spa_libs.get('core').post_to_server(post_url,str)
+			promise.done(function(data){
+				d1.resolve(data)
+			})
+
+			d1.done(
+				function(data){
+					reply='<div>' + data + '</div>';
+					$reply=$(reply);
+					spa_libs.get('core').parse_html($reply,reply);
+					//hide spinner
+					spa_libs.get('core').if_prop('spinner_lib',obj,function(spinner_lib){
+						spa_libs.get(spinner_lib).load().done(function(){spa_libs.get(spinner_lib).hide(obj)})
+					})
+			});
+		}	
+	}	
+	
+
+
+load_more
+---------------
+url:url/f/post_pageno:[nextpage]
+
+Ajax Call
+check for load more
+Send back the Data
+
+
+load_more
+
+	found_posts: 100
+	posts_per_page: 10
+	offset: 20
+	
+	
+	
+	max_num_pages
+	pageno	
+
+	
+	
+
+
+
+All Parameters
+------------------------------------
+spa_activity: the command to run. Always of the format libname:function
+The library is always loaded before the command is fired.
+
+if spa_activity = libname:load  will load the library
+if spa_activity = libname:set_defaults  will load the library and then set the default settings
+
+lib='dependancy1, dependancy2' will load the dependancy libraries before running the command
+set_defaults='true' will set the default setting before firing the command.
+
+[aw2_spa spa_activity='fancybox:load' lib='a,b,c' set_defaults='true']
+	alert('fancybox is loaded')
+[/aw2_spa]
+
+
+
+
+Using Scroll it
+------------------------
+Definition
+	//scrollto
+	spa_libs.get('core').new_lib({
+	lib:'scrollit',
+	js:'scrollit/scrollIt.min.js',
+	set_defaults: function(){
+	$.scrollIt()}
+	})
+	
+Reference
+http://www.bytemuse.com/scrollIt.js/
+
+Loading the library
+[aw2_spa spa_activity='core:run_script' lib='scrollit' set_defaults='true' /]
+
+Usage
+<a data-scroll-nav="0">About</a>
+<div data-scroll-index="0">..content..</div>
+
+figure out Lazy load background image
+Backbone, Underscore, Lab -> Take from CDNJS
+Take a call on Pace
+Support Google Analytics in this model
+
+
+Flow
+<check if the image exists  id_meta_field_name>
+http://codex.wordpress.org/Function_Reference/wp_get_attachment_image
+https://wordpress.org/plugins/simple-image-sizes/screenshots/
+
+	
+Libraries we like
+http://tristanedwards.me/sweetalert
+http://webpop.github.io/jquery.pin/
+http://clubdesign.github.io/floatlabels.js/
+http://fntneves.github.io/jquery-labelauty/
+https://mixitup.kunkalabs.com/
+
+Font Awesome - Move to CDN
+
+https://cdnjs.com/libraries/pace
+https://cdnjs.com/libraries/backbone.js
+https://cdnjs.com/libraries/underscore.js
+https://cdnjs.com/libraries/labjs
+
+Remove Bootstrap min js
+
+http://codex.wordpress.org/Function_Reference/wp_insert_attachment
+http://stackoverflow.com/questions/9022610/download-image-from-remote-source-and-resize-then-save
+
+<a href="www.google.com" id="hyper"></a>
+
+$("#hyper").click(function(){ 
+    $('body').fadeOut('slow',function(){$(this).remove();});
+});
+
+// Load all blocks and find the correct block
+
+Load the awesome blocks
+Loop and create another associative array with only the slug value. Then we can lookup that directly
+function getCustomSearch($key) {
+   foreach($people as $p) {
+      if($p['name']==$searchKey) return $p
+   }
+}
+getCustomSearch('waldo');
+
+Center the screen fade out fade in
+
+Fade out
+http://stackoverflow.com/questions/210717/using-jquery-to-center-a-div-on-the-screen
+Spinner
+
+Fadein
+Spinner out
+
+<script type="application/ld+json">
+	{
+		"@context": "http://schema.org",
+		"@type": "WebSite",
+		"url": "http://www.venablesbell.com/",
+		"potentialAction": {
+			"@type": "SearchAction",
+			"target": "http://www.venablesbell.com/search/{search_term_string}",
+			"query-input": "required name=search_term_string"
+		}
+	}
+</script>
+
+Core Library
+---------------------
+
+corelib.new_lib
+--------------------------
+
+spa_libs.get('core').new_lib({
+	lib:'bootbox',
+	cdnjs:'//cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.3.0/bootbox.min.js',
+	js:'bootbox/bootbox.min.js',
+	css:null,
+	cdncss:null,
+	set_defaults:function(){}
+})
+
+[aw2_spa run_script='core:new_lib' lib='bootbox' cdnjs='//cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.3.0/bootbox.min.js' js='bootbox/bootbox.min.js']
+	set_defaults code
+[/aw2_spa]
+	
+You can then run safe code using
+
+spa_libs.get('bootbox').load({set_defaults:true}).done(function(){
+	bootbox.confirm("Are you sure?", function(result) {
+		alert("Confirm result: "+result);
+	});
+})
+
+run scripts against library	
+[aw2_spa run_script='core:run_script' lib='bootbox' set_defaults=true]
+	bootbox.confirm("Are you sure?", function(result) {
+		alert("Confirm result: "+result);
+	});
+[/aw2_spa]
+
+
+
+
+
+core:form_submit_uri
+-------------------------
+Submit a Bootstrap 3 form
+[aw2_spa spa_activity='core:form_submit_uri' when='on_event' bind_event='click' bind_selector='.btnsubmit' uri='http://localhost/version2/hello-world/']
+It will not be cached and will be called everytime.
+
+On the server you will get in the request
+spa_call=true
+ajax=true
+form_submit=true
+
+
+
+
+
+
+
+core:parse_html
+-----------------------
+Parses an HTML block for script[type='text/spa'] and runs the actions
+Dont use until you are not sure how to use it
+
+core:post_to_server
+-----------------------
+Post to the server
+Dont use until you are not sure how to use it
+
+
+core:collect_data
+----------------------
+Collects data to send to the server
+Collects the following data
+all the parameters sent with :[aw2_spa]
+all the data- parameters of the bound element
+all the values of elements which are marked to the same group
+[aw2_spa group='search']
+<input type=text id='user_name' name='user_name' group=search></input>
+Any other data sent on speific functions
+Dont use until you are not sur ehow to use it
+
+
+
+
+
+
+
+Only one library : core
+Validate
+- will be a separate Library. Does not have to add functions to the model
+so validate will be a separate function 
+
+validatelibrary='validate'
+
+var validatelib=spa_libs.get(model.get('validatelibrary'))
+similarly we can do spinner library
+
+
+validatelib.load({set_defaults:true}).done(function(){
+		validatelib.validate().done(function(){
+		}) // so any validate library can be used
+	});
+})
+
+
+SPA
+----------------------------
+Everything happens asynchronously so you cannot assume that libraries are available to you by default.
+Only following libraries are available by default
+jquery.js,backbone.js, underscore.js, lab.js
+bootstrap.css,
+Pace Library
+
+Running a script after ready script/spa_page is load/ajax call is loaded
+-------------------------------------------------
+[aw2_spa spa_activity='core:run_script'/]
+	alert('hell');
+[/aw2_spa]
+
+Working with Libraries already built in with SPA
+----------------------------------------------------
+
+This will load the Library asynchronusly and then do the default settings. 
+[aw2_spa spa_activity='core:run_script' lib='lazyload,fancybox' set_defaults='true'/]
+[/aw2_spa]
+
+The above will load and do the default settings for the two libs lazyload and fancybox
+Use this when you dont want to do anything after the default settings for the library as there is no guaratee when this will happen. 
+
+eg fancybox
+step 1: load fancybox css and js
+step 2: set defaults ie $('.fancybox').fancybox();
+If nothing more needs to be done we can use the above
+
+	
+If you want to run a script safely
+
+[aw2_spa spa_activity='core:run_script' libs='fancybox' set_defaults='true']
+	$('.spa_main').on('click','.a-full-article',function(){
+	   $.fancybox.open($('#inline1'))
+		return false;
+	})
+[/aw2_spa]
+
+step 1: load fancybox css and js
+step 2: set defaults ie $('.fancybox').fancybox();
+step 3: run the script after step 1 and 2 is done
+
+
+Libs are loaded only once so if you run the same block again
+
+step 1: Already loaded do nothing
+step 2: set defaults ie $('.fancybox').fancybox();
+step 3: Run the script provided
+
+
+
+Javascript Library Definitions
+
+	//growl
+	spa_libs.get('core').new_lib({
+	lib:'growl',
+	cdnjs:'//cdnjs.cloudflare.com/ajax/libs/bootstrap-growl/1.0.0/jquery.bootstrap-growl.min.js',
+	js:'bootstrap-growl/bootstrap-growl.min.js'
+	})	
+	
+	//lazyload
+	spa_libs.get('core').new_lib({
+	lib:'lazyload',
+	cdnjs:'//cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js',
+	js:'lazyload/jquery.lazyload.min.js',
+	set_defaults: function(){$("<style type='text/css'>.lazy {display: none;}</style>").appendTo("head");
+		$('img.lazy').show().lazyload({threshold : 400});$(window).scroll();}
+	})
+
+<img class="lazy" data-original="img/example.jpg"  width="640" heigh="480">
+<noscript><img src="img/example.jpg" width="640" heigh="480"></noscript>	
+	
+
+	//fancybox
+	spa_libs.get('core').new_lib({
+	lib:'fancybox',
+	cdnjs:'//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js',
+	js:'fancybox/jquery.fancybox.pack.js',
+	cdncss:'//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css',
+	css:'fancybox/jquery.fancybox.css',
+	set_defaults: function(){$('.fancybox').fancybox();}
+	})
+
+	spa_libs.get('fancybox').show_content=function(obj){
+		var model=obj.model;
+		$.fancybox.close();
+		if(model.has("html_selector"))
+			htmlcontent=$(model.get('content')).find(model.get("html_selector")).html(); 
+		else
+			htmlcontent=$(model.get('content')).html(); 
+		$.fancybox.open(htmlcontent); 
+	}
+
+	spa_libs.get('fancybox').close=function(obj){
+			$.fancybox.close();
+	}
+
+	
+ 	//bootbox	
+	var bootboxlib=spa_libs.get('core').new_lib({
+	lib:'bootbox',
+	cdnjs:'//cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.3.0/bootbox.min.js',
+	js:'bootbox/bootbox.min.js'
+	})
+	
+	//bootstrap-select
+	spa_libs.get('core').new_lib({
+	lib:'bootstrap_select',
+	cdnjs:'//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/js/bootstrap-select.min.js',
+	js:'bootstrap-select/bootstrap-select.min.js',
+	cdncss:'//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.min.css',
+	css:'bootstrap-select/bootstrap-select.min.css',
+	set_defaults: function(){$('.selectpicker').selectpicker();}
+	})
+	
+
+	
+	
+	//spinner
+	spa_libs.get('core').new_lib({
+	lib:'spinner',
+	cdnjs:'//cdnjs.cloudflare.com/ajax/libs/spin.js/2.0.1/jquery.spin.min.js',
+	js:'spin/spin.min.js'
+	})	
+	
+	spa_libs.get('spinner').show=function(obj){
+		var spinner_target = $('body').get(0);
+		var spinner_opts = {
+			  lines: 10, // The number of lines to draw
+			  length: 4, // The length of each line
+			  width: 4, // The line thickness
+			  radius: 10, // The radius of the inner circle
+			  corners: 1, // Corner roundness (0..1)
+			  rotate: 0, // The rotation offset
+			  direction: 1, // 1: clockwise, -1: counterclockwise
+			  color: '#000', // #rgb or #rrggbb or array of colors
+			  speed: 0.6, // Rounds per second
+			  trail: 60, // Afterglow percentage
+			  shadow: true, // Whether to render a shadow
+			  hwaccel: true, // Whether to use hardware acceleration
+			  className: 'spinner', // The CSS class to assign to the spinner
+			  zIndex: 2e9, // The z-index (defaults to 2000000000)
+			  top: '50%', // Top position relative to parent in px
+			  left: '50%' // Left position relative to parent in px
+			};	
+		var spinner = new Spinner(spinner_opts).spin(spinner_target);	
+		$('body').css('cursor','progress');
+
+	};
+	spa_libs.get('spinner').hide=function(obj){
+		$('.spinner').remove();
+		$('body').css('cursor','default');
+	};		
+	
+	//scrollto
+	spa_libs.get('core').new_lib({
+	lib:'scrollTo',
+	cdnjs:'//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/1.4.14/jquery.scrollTo.min.js',
+	js:'scrollto/jquery.scrollTo.min.js'
+	})
+
+	spa_libs.get('scrollTo').scrollTo=function(obj){
+	
+		obj.scrollTo();
+	}
+	
+	//ladda
+	spa_libs.get('core').new_lib({
+	lib:'ladda',
+	js:'spin/spin.min.js,ladda/ladda.min.js',
+	cdnjs:'//cdnjs.cloudflare.com/ajax/libs/Ladda/0.9.7/ladda.min.js,//cdnjs.cloudflare.com/ajax/libs/Ladda/0.9.7/spin.min.js'
+	css:'//cdnjs.cloudflare.com/ajax/libs/Ladda/0.9.7/ladda-themeless.min.css'
+	})	
+	
+	spa_libs.get('ladda').show=function(obj){
+	 	var l = Ladda.create(obj.$bound_element.get(0));
+	 	l.start();
+	};
+	spa_libs.get('ladda').hide=function(obj){
+	 	var l = Ladda.create(obj.$bound_element.get(0));
+	 	l.stop();
+	};		
+	
+	// match_height
+	spa_libs.get('core').new_lib({
+	lib:'match_height',
+	js:'match-height/jquery.matchHeight.js',
+	cdnjs:'//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.5.2/jquery.matchHeight-min.js'
+	})	
+	
+	spa_libs.get('match_height').run=function(obj){
+		var model=obj.model;
+		if(model.has("byRow"))
+			byRow=model.get("byRow"); 
+		else
+			byRow=true; 
+		$(model.get("selector")).matchHeight(byRow);
+		$( window ).resize({selector:model.get("selector")},function(event) {
+			$(event.data.selector).matchHeight(byRow);
+		})
+	};
+
+	//spa_validate
+	spa_libs.get('core').new_lib({
+	lib:'spa_validate',
+	js:'spa_validate/spa_validate.js'
+	})
+
+	spa_libs.get('spa_validate').validate=function($form,obj){
+		var d1 = $.Deferred();
+
+		var promise=$form.spa_validate();
+
+		promise.done(function(status){
+			d1.resolve(status);
+		});
+
+		return d1.promise(status);
+	}
+
+
+
+
+	
+<!-- Set help for component-->
+[aw2_ignore help]
+query with id: query_{{aw2_param ui_slug}}
+The query must return a post
+
+Fields
+-----------------
+txt_block:template variable for showing custom content format in exceprt area
+image_max_height: maximum height of image box in px, to make image same size
+
+[/aw2_ignore]
+
+
+<!-- Set default parameters-->
+
+[aw2_query slug='posts' param_not_exists='local:query']
+
+[aw2_set_template local:excerpt_content]
+    <p>[aw2_loop_value excerpt /]</p>
+[/aw2_set_template]    
+[aw2_set_field overwrite='no']
+    {
+    "local:txt_block":"excerpt_content",
+    "local:image_max_height":"150px"
+    }
+[/aw2_set_field] 
+
+<!-- Include any libraries-->
+
+<!-- Set any Templates-->
+
+
+<!-- Less and not css-->
+	  
+[aw2_less]
+    .[ui_slug /]{
+    }
+[/aw2_less]
+
+<!-- HTML Output-->
+
+	  
+<div id='[ui_id /]' class="col-xs-12 [ui_class /] [ui_slug /]">
+    [aw2_loop id='local:query']
+	<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 single-unit">
+	    <div class='single-unit-inner'>
+    		<div class="photo">
+    			<img src="[aw2_loop_value featured_image_url size='full' /]" class="img-responsive" alt="[aw2_loop_value post_title /]" />
+    		</div>
+    		<div class="info separator">
+				<h5><a href='[aw2_loop_value url /]'>[aw2_loop_value post_title /]</a></h5>
+				<div class="excerpt">
+				    [aw2_use_template main='local:{{aw2_field txt_block}}' /]
+				</div>
+    		</div>
+		</div>
+	</div>
+	[/aw2_loop]
+</div>
+
+[aw2_spa spa_activity='match_height' selector='#{{ui_id}} .single-unit-inner .excerpt' rows='true']
+[aw2_spa spa_activity='match_height' selector='#{{ui_id}} .single-unit-inner h5' rows='true']
+[aw2_spa spa_activity='match_height' selector='#{{ui_id}} .single-unit-inner .info' rows='true']
+[aw2_spa spa_activity='match_height' selector='#{{ui_id}} .single-unit-inner' rows='true']
+
+
+
+Media object - Takes One Item object
+[aw2_media_object slug='xyz' post_id='1' class='' id='abc' /]
+
+
+
+[aw2_less only_once='{{aw2_local slug}}']
+    .[aw2_local slug /]{
+		font-size:40px
+    }
+[/aw2_less]
+
+
+<div id='[aw2_local id /]' class="col-lg-3 col-md-3 col-sm-4 col-xs-6 item [aw2_local class /] [aw2_local slug/]">
+	<div class='single-unit-inner'>
+		<div class="photo">
+			<img src="[aw2_mo_item_value featured_image_url size='full' /]" class="img-responsive" alt="[aw2_mo_item_value post_title /]" />
+		</div>
+		<div class="info separator">
+			<h5><a href='[aw2_mo_item_value url /]'>[aw2_mo_item_value post_title /]</a></h5>
+			<div class="excerpt">
+				[aw2_mo_item_value post_excerpt /]
+			</div>
+		</div>
+	</div>
+</div>
+
+
+[aw2_spa spa_activity='core:run_script']
+  
+  //google-analytics
+  [aw2_if_logged_in yes role='admin']
+  	window.ga_tracking_id='UA-18881107-1';
+    spa_libs.get('core').new_lib({
+    	lib:'google_analytics',
+    	cdnjs:'//www.google-analytics.com/analytics.js',
+    	set_defaults: function(){
+      	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    		ga('create', window.ga_tracking_id, {
+    'cookieDomain': 'none'
+  });	
+    	}
+    })
+    
+  spa_libs.get('google_analytics').pageview=function(obj){
+  debugger
+    ga('send', 'event', 'view', 'click', 'news',1);
+  
+  		ga('set', 'title' , obj.model.get('title'));	
+  		ga('set', 'page' , obj.model.get('page'));	
+  		ga('send', 'pageview');	
+  		
+    ga('set', 'expId', '37433726-2');     // The id of the experiment the user has been exposed to.
+    ga('set', 'expVar', '0'); // The index of the variation shown to the user.
+    ga('send', 'event', 'view', 'click', 'news');
+    ga('set', 'expVar', '1'); // The index of the variation shown to the user.
+    ga('send', 'event', 'view', 'click', 'news');
+		
+  }
+  
+  spa_libs.get('google_analytics').event=function(obj){
+  debugger;
+      var model=obj.model;
+  		ga('send', 'event',model.get('category'), model.get('action'), model.get('label'), Number(model.get('value')));	
+  }
+  [/aw2_if_logged_in]
+
+ 
+
+	
+	

@@ -1,0 +1,95 @@
+Theme Name: Buisness Directory Theme Changelog
+======================================
+
+== Version 1.2.0
+1.Added welcome page.
+2.Fixed Errors.
+
+== Version 1.1.9
+1. Popular Social Icons in Footer added.
+2. Few links updated.
+
+== Version 1.1.8
+1. Theme URI and footer links updated.
+
+== Version 1.1.7
+1. Change Styling on post.  
+2. Adding Theme support functionality.
+
+
+== Version 1.1.6
+1. Theme customizer sanitize function updated.
+2. Added contact us link to customizer.
+3. Removed unused codes from theme.
+4. Added translation function for text strings.
+5. Css file get enqueued using wp_enqueue_style function instead of adding using import.
+6. Replaced all constants with text strings.
+
+== Version 1.1.5
+* Theme option to WordPress customizer API migration.
+
+== Version 1.1.4
+* Theme check issue fixed.
+* All text domain matched with theme directory.
+* Language .pot file matched with text domain.
+* Use add_theme_support( 'title-tag' ) with after_theme_setup hook and removed title tag from header.php.
+
+* Version 1.1.3
+1. Some Vulnerability issues Fixed.
+
+* Version 1.1.2
+1. Fixed Some Visual Errors.
+
+* Version 1.1.1
+1. theme slug and prefix business_directory change by business-directory theme.
+
+* Version 1.1
+1. theme slug and prefix bd change by business directory theme.
+
+* Version 1.0.8
+1. business_directory_get_category_id, business_directory_breadcrumbs  and business_directory_custom_trim_excerpt removed from theme
+2. menu overlaping on search box issue fixed.
+3. load_theme_textdomain function used with theme_setup hook
+
+* Version 1.0.7
+1. Issue fixed hard coding of scripts.
+2. Remove Front Page On/Off Setting option.
+
+* Version 1.0.6
+1. remove one syntex error
+
+* Version 1.0.5
+***************************************
+1. removed some unused file and code.
+2. ddsmooth menu updated to superfish menu.
+3. colorpicker removed from theme.
+4. removed some undefined index errors.
+
+
+* Version 1.0.4
+***************************************
+1. removed some undefined index errors
+2. dynamic_image.php script removed from theme
+3. text domain updated
+4. license information of some css and javascrip file are mentioned in readme.txt file
+
+* Version 1.0.3
+***************************************
+1. TEMPLATEPATH replace from get_template_directory()
+2. comments_template() used in page.php
+
+* Version 1.0.2
+***************************************
+1. Custom Post Type Removed
+2. theme Design Improved
+3. database error Removed
+
+* Version 1.0.1
+*************************************** 
+1. Theme screenshot changed
+
+* Version 1.0.0
+***************************************
+1. Buisness Directory Theme is created on 4/10/2014.
+
+

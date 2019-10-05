@@ -1,0 +1,125 @@
+/*
+Theme Name: Responsive Forum
+Description: Responsive Forum is multipurpose, responsive, SEO friendly and bbPress compatible theme. it can be use to display information, portfolio, eCommerce and forum websites. Theme features: Header Layouts, One Click Demo Import, Custom Logo, Header Image, Featured Image, Custom Menu, Sticky Menu, Sidebar Menu, Sidebar Widgets, Footer Widgets with 6 Layouts, WooCommerce Options, Typography Options, Top bar, Copyright Section, Page Layouts (Full Width, Left Sidebar, Right Sidebar), Social Profile Options, Blog Options, Back To Top Icon, Page Preloader, Page Widget area, Post Widget area, WooCommerce Widget area, bbPress Widget area, Social Profile Widget, Recent Posts with Thumbnail Widget, Translation Ready, SEO Friendly, Structured Data Implemented, Search Engine Recommended Structured, Compatible with SEO plugins. it is compatible with all popular plugins like page builders, Contact Form 7, WordPress SEO, WooCommerce, bbPress (Forum Plugin) etc. It is base on bootstrap and best template for discussion forum, bulletin board.
+Author: Alex Sander
+Version: 1.0.5
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, two-columns, left-sidebar, right-sidebar, grid-layout, custom-background, custom-colors, custom-header, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, flexible-header, full-width-template, microformats, post-formats, theme-options, threaded-comments, translation-ready, blog, e-commerce, portfolio
+Text Domain: responsive-forum
+Template: di-business
+*/
+
+#bbpress-forums p.bbp-topic-meta img.avatar, #bbpress-forums ul.bbp-reply-revision-log img.avatar, #bbpress-forums ul.bbp-topic-revision-log img.avatar, #bbpress-forums div.bbp-template-notice img.avatar, #bbpress-forums .widget_display_topics img.avatar, #bbpress-forums .widget_display_replies img.avatar {
+	display: none;
+}
+
+#subscription-toggle a {
+	left: 0px;
+}
+
+#bbpress-forums div.bbp-topic-content a, #bbpress-forums div.bbp-reply-content a {
+	position: relative;
+	top: 0px;
+}
+
+#bbpress-forums .bbp-breadcrumb p, #bbpress-forums .bbp-topic-tags p,  #bbpress-forums .bbp-template-notice.info p {
+	font-size: 12px;
+}
+
+#bbpress-forums label {
+	font-weight: normal;
+}
+
+#bbpress-forums legend {
+	width: unset;
+	margin-bottom: 0;
+	font-size: 16px;
+	border-bottom: 0;
+}
+
+#bbp_reply_submit {
+	-webkit-transition: color 0.3s linear, background-color 0.3s linear;
+	-moz-transition: color 0.3s linear, background-color 0.3s linear;
+	transition: color 0.3s linear, background-color 0.3s linear;
+}
+
+.widget_sidebar_main.widget_display_search #bbp-search-form {
+	margin: 2px 8px;
+}
+
+.widget_sidebar_main.widget_display_forums ul, .widget_sidebar_main.widget_display_replies ul, .widget_sidebar_main.widget_display_topics ul, .widget_sidebar_main.widget_display_views ul {
+	padding: 0 0 0 20px;
+	margin-bottom: -10px;
+}
+
+.widget_sidebar_main.widget_display_forums ul li, .widget_sidebar_main.widget_display_replies ul li, .widget_sidebar_main.widget_display_topics ul li, .widget_sidebar_main.widget_display_views ul li {
+  list-style-type: none;
+  margin-bottom: 6px;
+  margin-top: 6px;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 9px;
+}
+
+.widget_sidebar_main.widget_display_forums ul li:last-child, .widget_sidebar_main.widget_display_replies ul li:last-child, .widget_sidebar_main.widget_display_topics ul li:last-child, .widget_sidebar_main.widget_display_views ul li:last-child {
+  border-bottom: 0px solid #eaeaea;
+}
+
+.widget_sidebar_main.widget_display_forums ul li a::before, .widget_sidebar_main.widget_display_replies ul li a::before, .widget_sidebar_main.widget_display_topics ul li a::before, .widget_sidebar_main.widget_display_views ul li a::before {
+  content: "\f101";
+  font-family: fontawesome;
+  font-weight: bold;
+  left: -4px;
+  position: relative;
+  font-size: 17px;
+}
+
+.widget_sidebar_main.widget_display_stats dl {
+	margin: 0px 12px;
+}
+
+.widget_sidebar_main.bbp_widget_login form {
+    padding: 2px 9px;
+}
+
+.widget_sidebar_main .bbp-logged-in {
+    padding: 2px 9px;
+}
+
+#buddypress #signup_form.standard-form #signup_email,
+#buddypress #signup_form.standard-form #signup_password,
+#buddypress #signup_form.standard-form #pass-strength-result,
+#buddypress #signup_form.standard-form #signup_password_confirm {
+    width: 90%;
+}
+
+.widget.widget_display_topics ul {
+    padding: 1px 12px;
+}
+.widget.widget_display_topics .topic-author img {
+    display: inline;
+}
+.widget.widget_display_topics li {
+    padding: 6px 0px;
+}
+
+.widget.widget_display_replies ul {
+    padding: 1px 12px;
+}
+.widget.widget_display_replies ul li img.avatar {
+    display: inline;
+}
+.widget.widget_display_replies li {
+    padding: 6px 0px;
+}
+
+#buddypress table.profile-fields {
+    margin-top: 17px;
+}
+
+#buddypress table.profile-fields tr td.label {
+    border: none;
+    color: #000000;
+    font-size: 14px;
+    vertical-align: text-bottom;
+}

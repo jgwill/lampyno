@@ -1,0 +1,15 @@
+.ewd-urp-review-graphic {
+	width: 110px;
+	height: 23px;
+	float: left;
+}
+
+.ewd-urp-color-bar {
+	height: 16px;
+	margin-top: 3px;
+	float: left;
+}
+
+.ewd-urp-blue-bar {
+	background: #3333DD;
+}

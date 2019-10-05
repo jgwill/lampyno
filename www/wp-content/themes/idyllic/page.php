@@ -1,0 +1,55 @@
+<?php
+/**
+ * The template for displaying all pages.
+ *
+ * @package Theme Freesia
+ * @subpackage Idyllic
+ * @since Idyllic 1.0
+ */
+
+get_header();?>
+<div class="wrap">
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+			<header class="page-header">
+				<?php if ( is_front_page()) : ?>
+					<h2 class="page-title"><?php the_title();?></h2>
+					<!-- .page-title -->
+				<?php else : ?>
+					<h1 class="page-title"><?php the_title();?></h1>
+					<!-- .page-title -->
+				<?php endif; ?>
+				<?php idyllic_breadcrumb(); ?><!-- .breadcrumb -->
+			</header><!-- .page-header -->
+			<?php
+			if( have_posts() ) {
+				while( have_posts() ) {
+					the_post(); ?>
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+				<div class="entry-content clearfix">
+					<?php the_content(); ?>
+				</div> <!-- entry-content clearfix-->
+				<?php
+				wp_link_pages( array( 
+						'before'            => '<div style="clear: both;"></div><div class="pagination clearfix">'.esc_html__( 'Pages:', 'idyllic' ),
+						'after'             => '</div>',
+						'link_before'       => '<span>',
+						'link_after'        => '</span>',
+						'pagelink'          => '%',
+						'echo'              => 1
+						) );
+				comments_template(); ?>
+			</article>
+			<?php }
+			} else { ?>
+			<h1 class="entry-title"> <?php esc_html_e( 'No Posts Found.', 'idyllic' ); ?> </h1>
+			<?php
+			} ?>
+		</main><!-- end #main -->
+	</div> <!-- #primary -->
+<?php
+get_sidebar();
+?>
+</div><!-- end .wrap -->
+<?php
+get_footer();

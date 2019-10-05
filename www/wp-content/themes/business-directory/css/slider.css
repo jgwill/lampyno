@@ -1,0 +1,105 @@
+/* =========================================
+   Portfolio slider list
+======================================== */
+.slider-list{
+    position: relative;
+    height:330px;
+    overflow: hidden;
+    z-index: 0;
+}
+.slider-list .flex-direction-nav {
+    height: 0;
+    z-index: 1000;
+}
+.slider-list .flex-direction-nav li a {
+    margin: -13px 0 0;
+    display: block;
+    position: absolute;
+    bottom: 6px;
+    cursor: pointer;
+    text-indent: -999em;
+    z-index: 1000;
+}
+.slider-list .flex-direction-nav li .next,
+.slider-list .flex-direction-nav li .prev{
+    position: absolute;                
+    width: 23px;
+    height: 23px;
+    display: block;
+    cursor: pointer;
+    top: 80px; 
+} 
+.slider-list .flex-direction-nav li .next {
+  right:0;
+    background: url('../images/slider-btn.png') no-repeat -23px 0;
+}
+.slider-list .flex-direction-nav li .prev {
+    left:0;    
+    background: url('../images/slider-btn.png') no-repeat 0 0;
+}
+
+
+.slider-list .flex-direction-nav li .next:hover{
+    background-position: -72px 0;
+}
+.slider-list .flex-direction-nav li .prev:hover{
+    background-position: -48px 0;
+}
+
+.slider-list ul.slides li{
+    list-style-type: none;
+}            
+.slider-list .slider-item {
+    float: left;
+    width: 215px;
+    margin-left: 28px;
+    overflow: hidden;
+    margin-bottom: 80px;
+}
+
+.slider-item.first {
+    margin-left: 2px !important;
+}
+
+.slider-list li .post-thumb {
+    margin-bottom: 15px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .25); 
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, .25);  
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, .25);
+    border-radius: 4px; 
+    -moz-border-radius: 4px; 
+    -webkit-border-radius: 4px; 
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC; 
+    padding: 9px;
+}
+.slider-list li .post-thumb img{
+}
+.slider-list li h3 a{
+    color:#222222;
+    text-decoration: none;
+    font-size: 14px;
+}
+.slider-list li h3 {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.slider-list .post-thumb a {
+    display: block;
+    position: relative;
+    background-image: url(../images/loading1.gif);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.slider-list li h3,
+.slider-list li p {
+    margin-top: 3px;
+}
+.slider-list li p {
+    color: #666666;
+}
+.slider-list .star_rating{
+    margin-bottom: 8px;
+}

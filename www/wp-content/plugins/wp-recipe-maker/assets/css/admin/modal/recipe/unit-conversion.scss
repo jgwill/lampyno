@@ -1,0 +1,129 @@
+.wprm-admin-modal-field-ingredient-unit-conversion-systems {
+    display: flex;
+    flex-wrap: wrap;
+    
+    font-size: 14px;
+    margin-bottom: 25px;
+
+    strong {
+        flex: 0 0 100%;
+    }
+
+    a {
+        margin: 0 5px;
+        text-decoration: none;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+}
+
+.wprm-admin-modal-field-ingredient-unit-conversion-container {
+    button {
+        margin: 10px 0 0 3px !important;
+    }
+}
+
+.wprm-admin-modal-field-ingredient-unit-conversion {
+    width: 100%;
+
+    thead {
+        display: none;
+    }
+
+    tr {
+        display: block;
+        margin-bottom: 10px;
+
+        td:first-child {
+            display: block;
+        }
+
+        td:nth-child(2) {
+            width: 175px;
+        }
+
+        .wprm-admin-modal-field-ingredient-unit-conversion-fields {
+            display: flex;
+            align-items: center;
+
+            .wprm-admin-modal-field-richtext {
+                &:nth-child(1) {
+                    flex: 0 0 75px;
+                    margin-right: 5px;
+                }
+                &:nth-child(2) {
+                    flex: 0 0 90px;
+                }
+            }
+        }
+    }
+}
+
+.wprm-admin-modal-field-ingredient-unit-conversion-item {
+    margin: 5px 0;
+    font-size: 14px;
+
+    strong {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .wprm-admin-modal-field-ingredient-unit-conversion-ingredient {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .wprm-admin-modal-field-ingredient-unit-conversion-ingredient-system-1 {
+            margin-right: 10px;
+            flex: 0 0 100px;
+        }
+
+        .wprm-admin-modal-field-ingredient-unit-conversion-ingredient-system-2 {
+            margin: 0 10px;
+        }
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .wprm-admin-modal-field-ingredient-unit-conversion {    
+        thead {
+            display: table-header-group;
+
+            th {
+                text-align: left;
+            }
+        }
+
+        tr {
+            display: table-row;
+            margin-bottom: 0;
+    
+            td:first-child {
+                display: table-cell;
+                width: 155px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 782px) {
+    .wprm-admin-modal-field-ingredient-unit-conversion-systems {    
+        strong {
+            flex: none;
+        }
+    }
+
+    .wprm-admin-modal-field-ingredient-unit-conversion {    
+        tr {
+            td:first-child {
+                width: 175px;
+            }
+            td:nth-child(2) {
+                width: 195px;
+            }
+        }
+    }
+}

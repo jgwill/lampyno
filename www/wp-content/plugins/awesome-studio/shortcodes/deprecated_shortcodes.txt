@@ -1,0 +1,130 @@
+// Adding the json endpoint
+add_action( 'init', 'awesome2_filter_endpoint' ,3);
+function awesome2_filter_endpoint() {
+	add_rewrite_endpoint('f', EP_ALL );
+}
+
+add_action('init', 'awesome2_rewrite_rules',2);
+function awesome2_rewrite_rules() {
+	add_rewrite_endpoint('f', EP_ALL );
+}
+
+
+add_filter( 'template_include', 'spa_template_select', 99 );
+function spa_template_select( $template ) {
+	
+	$f=aw2_library::get_request('f');
+	if($f==null || $f==''){}
+	else{
+		$pieces= explode( '/' ,$f);
+		foreach ($pieces as $value) {
+			$pair=explode(':',$value);
+			if(isset($pair[1])){
+				aw2_library::setparam($pair[0],$pair[1]);
+			}
+		}
+	}
+
+	if(isset($_REQUEST['spa_call']) && $_REQUEST['spa_call']=='true')
+	{
+		if(is_single()){
+			$new_template  = plugin_dir_path( __FILE__ ).'php_templates/single.php';
+			return $new_template ;
+		}	
+		if(is_page()){
+			$new_template  = plugin_dir_path( __FILE__ ).'php_templates/page.php';
+			return $new_template ;
+		}	
+		
+		if(is_post_type_archive() || is_tax() || is_category() || is_tag()){
+			$new_template  = plugin_dir_path( __FILE__ ).'php_templates/archive.php';
+			return $new_template ;
+		}
+	}
+	return $template;
+}
+
+add_action('wp_ajax_run_module', 'run_module_handler');
+add_action('wp_ajax_nopriv_run_module', 'run_module_handler');
+
+add_action('wp_ajax_run_awesome2_block', 'run_module_handler');
+add_action('wp_ajax_nopriv_run_awesome2_block', 'run_module_handler');
+
+function run_module_handler(){
+	global $aw2_ajax;
+	$aw2_ajax=true;
+	$slug=aw2_library::get_request('slug');
+	$template=aw2_library::get_request('template');
+	echo aw2_library::run_module($slug,$template);
+	exit();
+}
+
+add_action('wp_ajax_app_ajax', 'app_ajax');
+add_action('wp_ajax_nopriv_app_ajax', 'app_ajax');
+
+function app_ajax(){
+	global $aw2_ajax;
+	$aw2_ajax=true;
+	
+	$app_slug=aw2_library::get_request('app');
+	$app = new aw2_app();
+	$app->setup($app_slug);
+	
+	$slug=aw2_library::get_request('slug');
+	$template=aw2_library::get_request('template');
+	echo aw2_library::run_module($slug,$template);
+	exit();
+}
+
+
+add_action('wp_enqueue_scripts', 'aw2_scripts');
+function aw2_scripts() {
+	wp_register_script('labjs', plugins_url('shortcodes/lib/labjs/LAB.min.js',dirname(__FILE__)) , '', null, true);
+	wp_enqueue_script('labjs');
+}
+
+add_action( 'admin_head', 'aw2_homeurl' );
+function aw2_homeurl() {
+?>
+<script type="text/javascript">
+var homeurl = '<?php echo home_url(); ?>';
+</script>
+<?php
+return;
+}
+
+add_action('wp_head','aw2_ajaxurl');
+function aw2_ajaxurl() {
+?>
+<script type="text/javascript">
+var ajaxurl = '<?php echo admin_url('admin-ajax.php'); ?>';
+var homeurl = '<?php echo home_url(); ?>';
+var spa_libs_url = '<?php echo plugins_url('shortcodes/lib/',dirname(__FILE__)); ?>';
+var spa_js_path = '<?php echo plugins_url('shortcodes/js/',dirname(__FILE__)); ?>';
+var aw2_cdn='<?php echo aw2_library::$cdn;?>';
+var aw2_app='<?php echo aw2_library::get('app.slug');?>';
+
+jQuery( document ).ready(function( $ ) {
+	var d1 = $.Deferred();
+	$LAB.queueScript(aw2_cdn + "awesome-backbone/underscore_backbone.min.js");
+	$LAB.queueWait();
+	$LAB.queueScript(spa_js_path + "aw2_spa.js");
+	$LAB.queueScript(spa_js_path + "aw2_app.js");
+	$LAB.runQueue().wait(function(){
+		d1.resolve();
+	})
+	d1.done(function(){
+		$(".default_spinner").hide();
+		$("#splashscreen").hide();
+		$('.spa_main').fadeTo( 1000,1 )
+
+		spa_libs.get('core').load_spa();
+		spa_libs.get('core').editor();
+	})
+
+});
+
+</script>
+<?php
+return;
+}

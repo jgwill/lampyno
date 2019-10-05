@@ -1,0 +1,96 @@
+/*
+RTL Support
+*/
+
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+
+caption,
+th,
+td {
+	text-align: right;
+}
+.toggle-menu{
+	    left: initial !important;
+	    right: 3.5rem;
+}
+span.cat-links.mains {
+    margin-right: -10px ;
+
+}
+
+span.cat-links.mains::before {
+    right: -0px;
+    border-left: 10px solid rgb(0, 80, 116);
+	border-right: 0px !important;
+}
+
+#s {
+    float: right !important;
+	border-bottom-right-radius: 4px !important;
+	border-top-right-radius: 4px !important;
+	border-top-left-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+}
+
+#searchsubmit {
+    float: right !important;
+	border-bottom-right-radius: 0 !important;
+	border-top-right-radius: 0 !important;
+    border-top-left-radius: 4px !important;
+    border-bottom-left-radius: 4px !important;
+}
+
+.address i.fa {
+    margin-left: 9px !important;
+    margin-right: 0 !important;
+}
+
+.comment-navigation .nav-previous, .posts-navigation .nav-previous, .post-navigation .nav-previous {
+    float: right !important;
+    text-align: right !important;
+}
+
+h2.widget-title:after{
+	    right: 0;
+		left: initial !important;
+}
+
+.comment-navigation .nav-next, .posts-navigation .nav-next, .post-navigation .nav-next {
+    float: left !important;
+    text-align: left !important;
+}
+
+div.comment::before{
+	-moz-transform: scaleX(1) !important;
+	-o-transform: scaleX(1) !important;
+	-webkit-transform: scaleX(1) !important;
+	transform: scaleX(1) !important;
+	    margin-right: -10px;
+}
+
+#searchform > div > div > div > div.small-2.columns > i{
+	    margin: 25% 20px 0 57% !important;
+}
+#searchform > div > div > div > div.small-2.columns{
+	    left: 8% !important;
+}
+
+.right {
+    float: left !important;
+}
+#random-post .latest-post a,
+div#random-post > h4,
+.tabs dd, .tabs .tab-title,
+.left,
+.latest-post .desc,
+.main-navigation li{
+	float: right !important;
+}
+
+#random-post .latest-post img, #random-post .latest-post img.attachment-post-thumbnail{
+	    margin-left: 8px;
+		    margin-right: 0px;
+}

@@ -1,0 +1,95 @@
+/*
+Theme Name: Di Business
+Description: Used to style the TinyMCE editor.
+*/
+
+body.mceContentBody {
+	font-family: 'Raleway', Sans-serif;
+	margin:15px
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 20px;
+  word-spacing:0.5px;
+  letter-spacing:1px;
+  font-weight:bold;
+  opacity:0.8;
+}
+
+
+h1 {font-size: 24px;}
+h2 {font-size: 22px;}
+h3 {font-size: 20px;}
+h4 {font-size: 18px;}
+h5 {font-size: 16px;}
+h6 {font-size: 14px;}
+
+
+p { 
+	line-height:25px;
+	word-spacing:0.5px;
+	letter-spacing:0.5px;
+	font-size:16px;
+	margin-bottom: 20px;
+}
+
+li {
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+
+blockquote {
+  background-color: #f5f5f5;
+  border-left: 5px solid #eee;
+  font-size: 17.5px;
+  margin: 0 0 20px;
+  padding: 10px 20px;
+}
+
+
+.rtl blockquote {
+	border-left: none;
+	border-right: 5px solid #eee;
+}
+
+.rtl blockquote cite {
+	text-align: left;
+}
+
+
+.mceContentBody .wp-caption, .mceContentBody img {
+	max-width: 100%;
+	height: auto;
+}
+
+.alignnone {
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+.alignleft {
+	float: left;
+	margin: 4px 8px 4px 0;
+}
+.alignright {
+	float: right;
+	margin: 4px 0 4px 8px;
+}
+.aligncenter {
+	display: block;
+	margin: 4px auto;
+}
+
+.wp-caption {
+	margin-bottom: 24px;
+}
+
+.wp-caption-text {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:    border-box;
+	box-sizing:         border-box;
+	font-size: 12px;
+	font-style: italic;
+	line-height: 1.5;
+	margin: 9px 0;
+}

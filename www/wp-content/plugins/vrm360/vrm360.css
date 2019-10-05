@@ -1,0 +1,26 @@
+/* CSS file for wordpress vrm360 plugin */
+
+/* =Normalize
+-----------------------------------------------------------------------------*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.imgover {padding:0px;}
+.container { position:relative; }
+
+/*.imgloader  { position:absolute; top: 150px; left: 42%; z-index: 1; overflow: auto;  width: 150px; height: auto;  } 
+.imgpreloader  { position:absolute; top: 35%; left: 42%; width: 16%; height: auto; overflow: auto; z-index: 1; }
+*/
+.imgpreloader  { position:absolute; top: 15%; left: 35%; width: 30%; height: auto; overflow: auto; z-index: 1; }
+.modellink  { position:absolute; top: 35px; left: 30px; overflow: auto; z-index: 1; }
+
+/*.imgloader  { position:absolute; top: 25%; margin-top: -35px; left: 50%; margin-left: -64px; z-index: 1; } 
+.imgpreloader  { position:absolute; top: 50%; margin-top: -35px; left: 50%; margin-left: -49px; z-index: 1; } */
+/*.buttonSS{
+   z-index: 100; cursor: pointer; position:absolute;
+   top:5; list-style-type:none; color:DeepSkyBlue;
+}*/

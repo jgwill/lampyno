@@ -1,0 +1,42 @@
+.busiprof-pro-features li
+{
+        line-height: 24px;
+    margin-bottom: 23px;
+    font-size: 14px;
+}
+.busiprof-pro-features .busiprof-pro-label
+{
+font-weight: bold;
+    background: #a7a7a7;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 2px 6px 2px 7px;
+    letter-spacing: .1px;
+    font-size: 12px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+.busiprof-pro-button
+{
+     margin-right: 21px !important;
+    width: 95%;
+    text-align: center;
+    letter-spacing: .2px;   
+}
+.busiprof-pro-features-customizer hr
+{
+      margin-top: 22px;
+    margin-bottom: 16px;  
+}
+.busiprof-pro-content ul
+{
+    list-style: circle !important;
+    padding-left: 20px !important;
+}
+.busiprof-pro-content li
+{
+ line-height: 22px;
+ font-size: 14px;
+ font-style: italic;
+ margin-bottom: 12px;   
+}

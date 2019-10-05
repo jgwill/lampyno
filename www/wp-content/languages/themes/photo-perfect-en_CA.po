@@ -1,0 +1,437 @@
+# Translation of Themes - Photo Perfect in English (Canada)
+# This file is distributed under the same license as the Themes - Photo Perfect package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-11-24 18:59:16+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: en_CA\n"
+"Project-Id-Version: Themes - Photo Perfect\n"
+
+#. Description of the theme
+msgid "Photo Perfect is a responsive photography WordPress Theme for professional photographer, photo bloggers and creative peeps. Theme is very easy to customize, maintain and use on a daily basis. If you are looking to make a strong online brand presence through their creative and innovative work then this theme is made for you. Official Support Forum: https://themepalace.com/support-forum/ Full Demo: https://wenthemes.com/theme-demos/?demo=photo-perfect"
+msgstr "Photo Perfect is a responsive photography WordPress Theme for professional photographer, photo bloggers and creative peeps. Theme is very easy to customize, maintain and use on a daily basis. If you are looking to make a strong online brand presence through their creative and innovative work then this theme is made for you. Official Support Forum: https://themepalace.com/support-forum/ Full Demo: https://wenthemes.com/theme-demos/?demo=photo-perfect"
+
+#. Theme Name of the theme
+msgid "Photo Perfect"
+msgstr "Photo Perfect"
+
+#. translators: %s: post title
+#: comments.php:33
+msgctxt "comments title"
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr "One thought on &ldquo;%s&rdquo;"
+
+#: inc/customizer.php:43
+msgid "Buy Pro"
+msgstr "Buy Pro"
+
+#: inc/customizer.php:42
+msgid "Photo Perfect Pro"
+msgstr "Photo Perfect Pro"
+
+#: inc/custom-header.php:28
+msgctxt "header image description"
+msgid "Red Rose"
+msgstr "Red Rose"
+
+#: inc/hook/custom.php:249
+msgid "%1$s by %2$s"
+msgstr "%1$s by %2$s"
+
+#: inc/customizer/option.php:110
+msgid "Category Text"
+msgstr "Category Text"
+
+#: inc/customizer/option.php:76
+msgid "Menu Text"
+msgstr "Menu Text"
+
+#: template-parts/content-single.php:26 template-parts/content-page.php:26
+msgid "Pages:"
+msgstr "Pages:"
+
+#: template-parts/content-none.php:29
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+
+#: template-parts/content-none.php:24
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+
+#: template-parts/content-none.php:20
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr "Nothing Found"
+
+#: inc/widgets.php:131
+msgid "Social menu is not set. Please create menu and assign it to Social Menu."
+msgstr "Social menu is not set. Please create menu and assign it to Social Menu."
+
+#: inc/widgets.php:125
+msgid "Title:"
+msgstr "Title:"
+
+#: inc/widgets.php:43
+msgid "Social Icons Widget"
+msgstr "Social Icons Widget"
+
+#: inc/widgets.php:46
+msgid "PP: Social"
+msgstr "PP: Social"
+
+#: inc/template-tags.php:111 template-parts/content-page.php:35
+msgid "Edit"
+msgstr "Edit"
+
+#: inc/template-tags.php:107
+msgid "Leave a comment"
+msgstr "Leave a comment"
+
+#: inc/template-tags.php:101
+msgid "Tagged %1$s"
+msgstr "Tagged %1$s"
+
+#: inc/template-tags.php:95
+msgid "Posted in %1$s"
+msgstr "Posted in %1$s"
+
+#: inc/template-tags.php:78 inc/template-tags.php:107
+msgid "% Comments"
+msgstr "% Comments"
+
+#: inc/template-tags.php:78 inc/template-tags.php:107
+msgid "1 Comment"
+msgstr "1 Comment"
+
+#: inc/template-tags.php:78
+msgid "Add comment"
+msgstr "Add comment"
+
+#: inc/metabox.php:73
+msgid "Choose Image Size in Single Post/Page"
+msgstr "Choose Image Size in Single Post/Page"
+
+#: inc/metabox.php:85
+msgid "Alignment of Image in Single Post/Page"
+msgstr "Alignment of Image in Single Post/Page"
+
+#: inc/support/footer-widgets.php:88
+msgid "Footer Widget %d"
+msgstr "Footer Widget %d"
+
+#: inc/metabox.php:63 inc/metabox.php:75 inc/metabox.php:87
+msgid "Default"
+msgstr "Standard"
+
+#: inc/metabox.php:61
+msgid "Choose Layout"
+msgstr "Choose Layout"
+
+#: inc/metabox.php:22
+msgid "Theme Settings"
+msgstr "Theme Settings"
+
+#: inc/hook/custom.php:247
+msgid "Proudly powered by %s"
+msgstr "Proudly powered by %s"
+
+#: inc/hook/custom.php:247
+msgid "https://wordpress.org/"
+msgstr "https://wordpress.org/"
+
+#: inc/customizer/default.php:23
+msgid "Category"
+msgstr "Category"
+
+#: inc/customizer/default.php:21
+msgid "Menu"
+msgstr "Menu"
+
+#: inc/hook/custom.php:41
+msgid "Search Results for: %s"
+msgstr "Search Results for: %s"
+
+#: inc/hook/custom.php:10
+msgid "Skip to content"
+msgstr "Skip to content"
+
+#: inc/hook/basic.php:17
+msgctxt "submit button"
+msgid "Search"
+msgstr "Search"
+
+#: inc/helper/options.php:167
+msgctxt "Alignment"
+msgid "None"
+msgstr "None"
+
+#: inc/helper/options.php:168
+msgctxt "Alignment"
+msgid "Left"
+msgstr "Left"
+
+#: inc/helper/options.php:170
+msgctxt "Alignment"
+msgid "Right"
+msgstr "Right"
+
+#: inc/hook/basic.php:14 inc/hook/basic.php:15
+msgctxt "label"
+msgid "Search for:"
+msgstr "Search for:"
+
+#: inc/helper/options.php:169
+msgctxt "Alignment"
+msgid "Center"
+msgstr "Centre"
+
+#: inc/helper/options.php:140
+msgid "Full"
+msgstr "Full"
+
+#: inc/helper/options.php:139
+msgid "Large"
+msgstr "Large"
+
+#: inc/helper/options.php:138
+msgid "Medium"
+msgstr "Medium"
+
+#: inc/helper/options.php:108
+msgid "full (original)"
+msgstr "full (original)"
+
+#: inc/helper/options.php:137
+msgid "Thumbnail"
+msgstr "Thumbnail"
+
+#: inc/helper/options.php:103 inc/helper/options.php:135
+msgid "No Image"
+msgstr "No Image"
+
+#: inc/helper/options.php:76
+msgid "Masonry"
+msgstr "Masonry"
+
+#: inc/helper/options.php:77
+msgid "Post Excerpt"
+msgstr "Post Excerpt"
+
+#: inc/helper/options.php:35
+msgid "Boxed"
+msgstr "Boxed"
+
+#: inc/helper/options.php:58
+msgid "Numeric"
+msgstr "Numeric"
+
+#: inc/helper/options.php:57
+msgid "Default (Older / Newer Post)"
+msgstr "Default (Older / Newer Post)"
+
+#: inc/helper/options.php:15
+msgid "No Sidebar"
+msgstr "No Sidebar"
+
+#: inc/helper/options.php:14
+msgid "Content - Primary Sidebar"
+msgstr "Content - Primary Sidebar"
+
+#: inc/helper/options.php:34
+msgid "Fluid"
+msgstr "Fluid"
+
+#: inc/helper/options.php:13
+msgid "Primary Sidebar - Content"
+msgstr "Primary Sidebar - Content"
+
+#: inc/customizer/option.php:351
+msgid "Custom CSS"
+msgstr "Custom CSS"
+
+#: inc/customizer/option.php:262
+msgid "Copyright Text"
+msgstr "Copyright Text"
+
+#: inc/customizer/option.php:288
+msgid "Blog Options"
+msgstr "Blog Options"
+
+#: inc/customizer/option.php:333
+msgid "Advanced Options"
+msgstr "Advanced Options"
+
+#: inc/customizer/option.php:323
+msgid "Read More Text"
+msgstr "Read More Text"
+
+#: inc/customizer/option.php:278
+msgid "Show Go To Top"
+msgstr "Show Go To Top"
+
+#: inc/customizer/option.php:305
+msgid "Excerpt Length (words)"
+msgstr "Excerpt Length (words)"
+
+#: inc/customizer/option.php:306
+msgid "Default is 40 words"
+msgstr "Default is 40 words"
+
+#: inc/customizer/option.php:217
+msgid "Pagination Options"
+msgstr "Pagination Options"
+
+#: inc/customizer/option.php:234
+msgid "Pagination Type"
+msgstr "Pagination Type"
+
+#: inc/customizer/option.php:245
+msgid "Footer Options"
+msgstr "Footer Options"
+
+#: inc/customizer/option.php:155
+msgid "Global Layout"
+msgstr "Global Layout"
+
+#: inc/customizer/option.php:172
+msgid "Archive Layout"
+msgstr "Archive Layout"
+
+#: inc/customizer/option.php:189
+msgid "Image in Single Post/Page"
+msgstr "Image in Single Post/Page"
+
+#: inc/customizer/option.php:206
+msgid "Image Alignment in Single Post/Page"
+msgstr "Image Alignment in Single Post/Page"
+
+#: inc/customizer/option.php:27
+msgid "Search Options"
+msgstr "Search Options"
+
+#: inc/customizer/option.php:128
+msgid "Search Placeholder"
+msgstr "Search Placeholder"
+
+#: inc/customizer/option.php:138
+msgid "Layout Options"
+msgstr "Layout Options"
+
+#: inc/customizer/option.php:43
+msgid "Show Site Title"
+msgstr "Show Site Title"
+
+#: inc/customizer/option.php:59
+msgid "Show Tagline"
+msgstr "Show Tagline"
+
+#: inc/customizer/option.php:93
+msgid "Show Category Dropdown"
+msgstr "Show Category Dropdown"
+
+#: inc/customizer/option.php:17
+msgid "Header Options"
+msgstr "Header Options"
+
+#: inc/customizer/option.php:8
+msgid "Theme Options"
+msgstr "Theme Options"
+
+#: inc/customizer/default.php:44
+msgid "Read More"
+msgstr "Read more"
+
+#: inc/customizer/default.php:39
+msgid "Copyright. All rights reserved."
+msgstr "Copyright. All rights reserved."
+
+#: inc/customizer/default.php:26
+msgid "Search..."
+msgstr "Search..."
+
+#: functions.php:160
+msgid "collapse child menu"
+msgstr "collapse child menu"
+
+#: functions.php:159
+msgid "expand child menu"
+msgstr "expand child menu"
+
+#: functions.php:125
+msgid "Add widgets here to appear in your Primary Sidebar."
+msgstr "Add widgets here to appear in your Primary Sidebar."
+
+#: functions.php:123
+msgid "Primary Sidebar"
+msgstr "Primary Sidebar"
+
+#: functions.php:42
+msgid "404 Menu"
+msgstr "404 Menu"
+
+#: functions.php:41
+msgid "Social Menu"
+msgstr "Social Menu"
+
+#: functions.php:40
+msgid "Footer Menu"
+msgstr "Footer Menu"
+
+#: functions.php:39
+msgid "Primary Menu"
+msgstr "Primary Menu"
+
+#: comments.php:90
+msgid "Comments are closed."
+msgstr "Comments are closed."
+
+#: comments.php:57 comments.php:78
+msgid "Newer Comments"
+msgstr "Newer Comments"
+
+#: comments.php:56 comments.php:77
+msgid "Older Comments"
+msgstr "Older Comments"
+
+#: comments.php:53 comments.php:74
+msgid "Comment navigation"
+msgstr "Comment navigation"
+
+#. translators: 1: number of comments, 2: post title
+#: comments.php:37
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s thought on &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s thoughts on &ldquo;%2$s&rdquo;"
+
+#: 404.php:24
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+
+#: 404.php:18
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Oops! That page can&rsquo;t be found."
+
+#: 404.php:17
+msgid "404"
+msgstr "404"
+
+#. Author of the theme
+msgid "WEN Themes"
+msgstr "WEN Themes"
+
+#. Theme URI of the theme
+msgid "https://wenthemes.com/item/wordpress-themes/photo-perfect/"
+msgstr "https://wenthemes.com/item/wordpress-themes/photo-perfect/"
+
+#. Author URI of the theme
+msgid "https://wenthemes.com/"
+msgstr "https://wenthemes.com/"

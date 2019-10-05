@@ -1,0 +1,101 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2017-01-19 15:00+0400\n"
+"PO-Revision-Date: 2017-01-19 15:02+0400\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-KeywordsList: __\n"
+"Last-Translator: \n"
+"Language: lt\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+msgid "Mon"
+msgstr "Pir"
+
+msgid "Tue"
+msgstr "Ant"
+
+msgid "Wed"
+msgstr "Tre"
+
+msgid "Thu"
+msgstr "Ket"
+
+msgid "Fri"
+msgstr "Pen"
+
+msgid "Sat"
+msgstr "Šeš"
+
+msgid "Sun"
+msgstr "Sek"
+
+msgid "Jan"
+msgstr "Sausio"
+
+msgid "Feb"
+msgstr "Vasario"
+
+msgid "Mar"
+msgstr "Kovo"
+
+msgid "Apr"
+msgstr "Balandžio"
+
+msgid "May"
+msgstr "Gegužės"
+
+msgid "June"
+msgstr "Birželio"
+
+msgid "July"
+msgstr "Liepos"
+
+msgid "Aug"
+msgstr "Rugpjūčio"
+
+msgid "Sep"
+msgstr "Rugsėjo"
+
+msgid "Oct"
+msgstr "Spalio"
+
+msgid "Nov"
+msgstr "Lapkričio"
+
+msgid "Dec"
+msgstr "Gruodžio"
+
+msgid "January"
+msgstr "Sausio"
+
+msgid "February"
+msgstr "Vasario"
+
+msgid "March"
+msgstr "Kovo"
+
+msgid "April"
+msgstr "Balandžio"
+
+msgid "August"
+msgstr "Rugpjūčio"
+
+msgid "September"
+msgstr "Rugsėjo"
+
+msgid "October"
+msgstr "Spalio"
+
+msgid "November"
+msgstr "Lapkričio"
+
+msgid "December"
+msgstr "Gruodžio"

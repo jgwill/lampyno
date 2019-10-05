@@ -1,0 +1,16 @@
+{
+  "presets": [
+    ["@babel/preset-typescript"],
+    ["@babel/preset-env", { "targets": "> 1%, ie 11" }],
+    ["@babel/preset-react"],
+  ],
+  "plugins": [
+    ["@babel/plugin-proposal-object-rest-spread", { "useBuiltIns": true }],
+    ["@babel/plugin-transform-react-jsx", {
+      "pragma": "window.__pragma__.render",
+      "pragmaFrag": "window.__pragma__.fragment"
+    }],
+    ["@babel/plugin-proposal-class-properties"],
+    ["@babel/plugin-transform-runtime", { "regenerator": true }]
+  ]
+}

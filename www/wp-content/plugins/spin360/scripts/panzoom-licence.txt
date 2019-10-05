@@ -1,0 +1,4 @@
+https://github.com/timmywil/panzoom
+License
+Code licensed under the MIT license
+http://opensource.org/licenses/MIT

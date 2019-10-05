@@ -1,0 +1,101 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2017-01-19 14:37+0400\n"
+"PO-Revision-Date: 2017-01-19 14:40+0400\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __\n"
+"Last-Translator: \n"
+"Language: eu\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+msgid "Mon"
+msgstr "Al."
+
+msgid "Tue"
+msgstr "Ar."
+
+msgid "Wed"
+msgstr "Az."
+
+msgid "Thu"
+msgstr "Og."
+
+msgid "Fri"
+msgstr "Or."
+
+msgid "Sat"
+msgstr "La."
+
+msgid "Sun"
+msgstr "Ig."
+
+msgid "Jan"
+msgstr "Urt"
+
+msgid "Feb"
+msgstr "Ots"
+
+msgid "Mar"
+msgstr "Mar"
+
+msgid "Apr"
+msgstr "Api"
+
+msgid "May"
+msgstr "Maiatza"
+
+msgid "June"
+msgstr "Ekaina"
+
+msgid "July"
+msgstr "Uztaila"
+
+msgid "Aug"
+msgstr "Abu"
+
+msgid "Sep"
+msgstr "Ira"
+
+msgid "Oct"
+msgstr "Urr"
+
+msgid "Nov"
+msgstr "Aza"
+
+msgid "Dec"
+msgstr "Abe"
+
+msgid "January"
+msgstr "Urtarrila"
+
+msgid "February"
+msgstr "Otsaila"
+
+msgid "March"
+msgstr "Martxoa"
+
+msgid "April"
+msgstr "Apirila"
+
+msgid "August"
+msgstr "Abuztua"
+
+msgid "September"
+msgstr "Iraila"
+
+msgid "October"
+msgstr "Urria"
+
+msgid "November"
+msgstr "Azaroa"
+
+msgid "December"
+msgstr "Abendua"

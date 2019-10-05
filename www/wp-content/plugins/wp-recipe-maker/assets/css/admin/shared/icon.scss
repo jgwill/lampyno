@@ -1,0 +1,9 @@
+.wprm-admin-icon {
+    opacity: 0.5;
+    margin-top: 2px;
+
+    &:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+}

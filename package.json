@@ -1,6 +1,6 @@
 {
   "name": "nodelamp",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Node Apache Linux MySql PHP Server.",
   "main": "gulpfile.js",
   "scripts": {

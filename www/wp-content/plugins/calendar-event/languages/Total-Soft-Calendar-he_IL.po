@@ -1,0 +1,101 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2017-01-19 15:53+0400\n"
+"PO-Revision-Date: 2017-01-19 15:57+0400\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __\n"
+"Last-Translator: \n"
+"Language: he\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+msgid "Mon"
+msgstr "ב\\'"
+
+msgid "Tue"
+msgstr "ג\\'"
+
+msgid "Wed"
+msgstr "ד\\'"
+
+msgid "Thu"
+msgstr "ה\\'"
+
+msgid "Fri"
+msgstr "ו\\'"
+
+msgid "Sat"
+msgstr "שבת"
+
+msgid "Sun"
+msgstr "א\\'"
+
+msgid "Jan"
+msgstr "ינואר"
+
+msgid "Feb"
+msgstr "פברואר"
+
+msgid "Mar"
+msgstr "מרץ"
+
+msgid "Apr"
+msgstr "אפריל"
+
+msgid "May"
+msgstr "מאי"
+
+msgid "June"
+msgstr "יוני"
+
+msgid "July"
+msgstr "יולי"
+
+msgid "Aug"
+msgstr "אוגוסט"
+
+msgid "Sep"
+msgstr "ספטמבר"
+
+msgid "Oct"
+msgstr "אוקטובר"
+
+msgid "Nov"
+msgstr "נובמבר"
+
+msgid "Dec"
+msgstr "דצמבר"
+
+msgid "January"
+msgstr "ינואר"
+
+msgid "February"
+msgstr "פברואר"
+
+msgid "March"
+msgstr "מרץ"
+
+msgid "April"
+msgstr "אפריל"
+
+msgid "August"
+msgstr "אוגוסט"
+
+msgid "September"
+msgstr "ספטמבר"
+
+msgid "October"
+msgstr "אוקטובר"
+
+msgid "November"
+msgstr "נובמבר"
+
+msgid "December"
+msgstr "דצמבר"

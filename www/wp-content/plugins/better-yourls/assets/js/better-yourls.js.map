@@ -1,0 +1,1 @@
+{"version":3,"sources":["src/better-yourls.js"],"names":["jQuery","document","ready","click","alert","better_yourls","text","yourls_url"],"mappings":"AAAAA,OAAQC,UAAWC,MAAO;IAEzBF,OAAQ,oCAAqCG,MAAO;QAEnDC,MAAOC,cAAcC,OAAO,SAASD,cAAcE","file":"better-yourls.js"}

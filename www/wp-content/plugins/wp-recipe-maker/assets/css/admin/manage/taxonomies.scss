@@ -1,0 +1,29 @@
+.wprm-manage-ingredients-group-container {
+    display: flex;
+    align-items: center;
+
+    span {
+        margin-left: 5px;
+    }
+}
+
+.wprm-manage-ingredients-link-container {
+    display: flex;
+    align-items: center;
+
+    a {
+        margin-left: 5px;
+        font-size: 11px;
+    }
+}
+
+.wprm-manage-equipment-image-preview {
+    display: flex;
+
+    img {
+        width: 80px;
+        height: auto;
+        cursor: pointer;
+        margin-right: 2px;
+    }
+}

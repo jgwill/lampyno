@@ -1,0 +1,49 @@
+<wpml-config>
+	<admin-texts>
+		<key name='busiprof_theme_options'>
+			<key name='caption_head' />
+			<key name='caption_text' />
+			<key name='readmore_text' />
+			<key name='readmore_text_link' />
+			<key name='slider_head_title' />
+			<key name='service_heading_one' />
+			<key name='service_tagline' />
+			<key name='service_button_value' />
+			<key name='service_link_btn' />
+			<key name='readmore_text' />
+			<key name='readmore_text' />
+			<key name='readmore_text' />
+			<key name='readmore_text' />
+			<key name='protfolio_tag_line' />
+			<key name='protfolio_description_tag' />
+			<key name='project_title_one' />
+			<key name='project_thumb_one' />
+			<key name='project_text_one' />
+			<key name='project_one_url' />
+			<key name='project_title_two' />
+			<key name='project_thumb_two' />
+			<key name='project_text_two' />
+			<key name='project_two_url' />
+			<key name='project_title_three' />
+			<key name='project_thumb_three' />
+			<key name='project_text_three' />
+			<key name='project_three_url' />
+			<key name='project_title_four' />
+			<key name='project_thumb_four' />
+			<key name='project_text_four' />
+			<key name='project_four_url' />
+			<key name='recent_blog_title' />
+			<key name='recent_blog_description' />
+			<key name='testimonials_title' />
+			<key name='testimonials_text' />
+			<key name='archive_prefix' />
+			<key name='category_prefix' />
+			<key name='author_prefix' />
+			<key name='tag_prefix' />
+			<key name='search_prefix' />
+			<key name='404_prefix' />
+			<key name='shop_prefix' />
+			<key name='footer_copyright_text'/>
+		</key>
+	</admin-texts>
+</wpml-config>

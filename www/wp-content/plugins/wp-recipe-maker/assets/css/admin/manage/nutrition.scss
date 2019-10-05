@@ -1,0 +1,21 @@
+.wprm-manage-nutrition-nutrition-container {
+    width: 100%;
+
+    .wprm-manage-nutrition-nutrition {
+        display: flex;
+        width: 100%;
+    
+        .wprm-manage-nutrition-nutrition-label {
+            flex: auto;
+            margin-right: 5px;
+        }
+        .wprm-manage-nutrition-nutrition-value-unit {
+            flex: 0 0 75px;
+    
+            .wprm-manage-nutrition-nutrition-unit {
+                margin-left: 2px;
+                font-size: 10px;
+            }
+        }
+    }
+}

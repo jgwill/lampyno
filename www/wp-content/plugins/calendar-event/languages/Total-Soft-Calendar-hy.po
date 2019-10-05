@@ -1,0 +1,101 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2017-01-19 15:57+0400\n"
+"PO-Revision-Date: 2017-01-19 16:07+0400\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __\n"
+"Last-Translator: \n"
+"Language: hy\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+msgid "Mon"
+msgstr "Երկ"
+
+msgid "Tue"
+msgstr "Երք"
+
+msgid "Wed"
+msgstr "Չոր"
+
+msgid "Thu"
+msgstr "Հնգ"
+
+msgid "Fri"
+msgstr "Ուրբ"
+
+msgid "Sat"
+msgstr "Շբթ"
+
+msgid "Sun"
+msgstr "Կի"
+
+msgid "Jan"
+msgstr "Հուն"
+
+msgid "Feb"
+msgstr "Փետ"
+
+msgid "Mar"
+msgstr "Մարտ"
+
+msgid "Apr"
+msgstr "Ապրիլ"
+
+msgid "May"
+msgstr "Մայիս"
+
+msgid "June"
+msgstr "Հունիս"
+
+msgid "July"
+msgstr "Հուլիս"
+
+msgid "Aug"
+msgstr "Օգ"
+
+msgid "Sep"
+msgstr "Սեպ"
+
+msgid "Oct"
+msgstr "Հոկ"
+
+msgid "Nov"
+msgstr "Նոյ"
+
+msgid "Dec"
+msgstr "Դեկ"
+
+msgid "January"
+msgstr "Հունվար"
+
+msgid "February"
+msgstr "Փետրվար"
+
+msgid "March"
+msgstr "Մարտ"
+
+msgid "April"
+msgstr "Ապրիլ"
+
+msgid "August"
+msgstr "Օգոստոս"
+
+msgid "September"
+msgstr "Սեպտեմբեր"
+
+msgid "October"
+msgstr "Հոկտեմբեր"
+
+msgid "November"
+msgstr "Նոյեմբեր"
+
+msgid "December"
+msgstr "Դեկտեմբեր"

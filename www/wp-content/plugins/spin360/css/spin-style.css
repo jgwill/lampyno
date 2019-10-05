@@ -1,0 +1,73 @@
+@font-face {
+  font-family: 'icospin';
+  src:  url('../fonts/icospin.eot?85kbjz');
+  src:  url('../fonts/icospin.eot?85kbjz#iefix') format('embedded-opentype'),
+    url('../fonts/icospin.ttf?85kbjz') format('truetype'),
+    url('../fonts/icospin.woff?85kbjz') format('woff'),
+    url('../fonts/icospin.svg?85kbjz#icospin') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icospin' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /*spin360 css options*/
+  /*color:DeepSkyBlue;*/
+  color:#00ABFF;
+  font-size:32px; 
+  cursor: pointer;
+  
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ion-loop:before {
+  content: "\e900";
+}
+.icon-ion-refresh:before {
+  content: "\e901";
+}
+.icon-ion-android-contract:before {
+  content: "\e902";
+}
+.icon-ion-android-expand:before {
+  content: "\e903";
+}
+.icon-ion-qr-scanner:before {
+  content: "\e904";
+}
+.icon-ion-android-locate:before {
+  content: "\e905";
+}
+.icon-ion-arrow-down-b:before {
+  content: "\e906";
+}
+.icon-ion-arrow-up-b:before {
+  content: "\e907";
+}
+.icon-ion-zoom-reset:before {
+  content: "\e908";
+}
+.icon-ion-desktop:before {
+  content: "\e909";
+}
+.icon-ion-android-sync:before {
+  content: "\e90a";
+}
+.icon-ion-ios-locate:before {
+  content: "\e90b";
+}
+.icon-ion-ios-loop:before {
+  content: "\e90c";
+}
+.icon-ion-ios-loop-strong:before {
+  content: "\e90d";
+}

@@ -1,0 +1,187 @@
+{
+  "title": "Recipe",
+  "boxes": [
+    {
+      "id": "primary",
+      "label": "Recipe",
+      "layout": "Grid",
+      "grid": "'Title Thumbnail' 'Author Thumbnail' 'Yield Thumbnail' 'Diet Thumbnail' 'Description Description' 'Category Cuisine' 'Times Times'",
+      "order": 0
+    },
+    {
+      "id": "ingredients",
+      "label": "Ingredients",
+      "isSingle": true,
+      "layout": "Standard",
+      "order": 1
+    },
+    {
+      "id": "instructions",
+      "label": "Instructions",
+      "isSingle": true,
+      "layout": "Standard",
+      "order": 1
+    },
+    {
+      "id": "nutrition",
+      "label": "Nutrition",
+      "isSingle": true,
+      "layout": "Standard",
+      "order": 3
+    },
+    {
+      "id": "video",
+      "label": "Video",
+      "layout": "Standard",
+      "order": 4
+    },
+    {
+      "id": "products",
+      "label": "Recommended Products",
+      "isSingle": true,
+      "layout": "Standard",
+      "order": 5
+    },
+    {
+      "id": "seo",
+      "label": "SEO\/Social",
+      "layout": "Standard",
+      "order": 6
+    }
+  ],
+  "fields": [
+    {
+      "id": "HkTEYa_VQ",
+      "box": "primary",
+      "label": "Title",
+      "mapTo": "title",
+      "order": 0
+    },
+    {
+      "id": "BJMrtadEX",
+      "box": "primary",
+      "label": "Author",
+      "mapTo": "author",
+      "order": 1
+    },
+    {
+      "id": "yield",
+      "box": "primary",
+      "label": "Yield",
+      "mapTo": "yield",
+      "order": 2
+    },
+    {
+      "id": "suitable_for_diet",
+      "box": "primary",
+      "label": "Diet",
+      "mapTo": "suitable_for_diet",
+      "order": 3
+    },
+    {
+      "id": "BkjHFT_N7",
+      "box": "primary",
+      "label": "Thumbnail",
+      "mapTo": "thumbnail",
+      "order": 5
+    },
+    {
+      "id": "BJ-k9TuEQ",
+      "box": "primary",
+      "label": "Description",
+      "mapTo": "description",
+      "order": 4
+    },
+    {
+      "id": "rkTUKpuVm",
+      "box": "primary",
+      "label": "Category",
+      "mapTo": "category",
+      "order": 6
+    },
+    {
+      "id": "SJe_YpuVQ",
+      "box": "primary",
+      "label": "Cuisine",
+      "mapTo": "cuisine",
+      "order": 7
+    },
+    {
+      "id": "SJfMqad4Q",
+      "box": "primary",
+      "label": "Times",
+      "mapTo": "time",
+      "order": 8
+    },
+    {
+      "id": "BJq75TOEm",
+      "box": "ingredients",
+      "label": "Ingredients",
+      "mapTo": "ingredients",
+      "order": 9
+    },
+    {
+      "id": "Sybc96dE7",
+      "box": "instructions",
+      "label": "Instructions",
+      "mapTo": "instructions",
+      "order": 10
+    },
+    {
+      "id": "notes",
+      "box": "instructions",
+      "label": "Notes",
+      "mapTo": "notes",
+      "order": 11
+    },
+    {
+      "id": "HJ4H5p_NX",
+      "box": "nutrition",
+      "label": "Nutrition",
+      "mapTo": "nutrition",
+      "order": 12
+    },
+    {
+      "id": "Sybc96dE7",
+      "box": "video",
+      "label": "Video",
+      "mapTo": "video",
+      "order": 13
+    },
+    {
+      "id": "external_video",
+      "box": "video",
+      "label": "Video",
+      "mapTo": "external_video",
+      "order": 14
+    },
+    {
+      "id": "Syxv9T_E7",
+      "box": "products",
+      "label": "Products",
+      "mapTo": "products",
+      "order": 14
+    },
+    {
+      "id": "keywords",
+      "box": "seo",
+      "label": "Keywords",
+      "mapTo": "keywords",
+      "order": 15
+    },
+    {
+      "id": "r14Ocad47",
+      "box": "seo",
+      "label": "Pinterest Options",
+      "mapTo": "pinterest",
+      "order": 16
+    },
+    {
+      "id": "ryTdcT_NQ",
+      "box": "seo",
+      "label": "Use JSON-LD?",
+      "mapTo": "schema_display",
+      "order": 17
+    }
+  ]
+}

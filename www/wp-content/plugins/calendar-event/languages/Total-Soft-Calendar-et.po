@@ -1,0 +1,101 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2017-01-19 14:34+0400\n"
+"PO-Revision-Date: 2017-01-19 14:37+0400\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __\n"
+"Last-Translator: \n"
+"Language: et\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+msgid "Mon"
+msgstr "E"
+
+msgid "Tue"
+msgstr "T"
+
+msgid "Wed"
+msgstr "K"
+
+msgid "Thu"
+msgstr "N"
+
+msgid "Fri"
+msgstr "R"
+
+msgid "Sat"
+msgstr "L"
+
+msgid "Sun"
+msgstr "P"
+
+msgid "Jan"
+msgstr "Jaan"
+
+msgid "Feb"
+msgstr "Veeb"
+
+msgid "Mar"
+msgstr "Mär"
+
+msgid "Apr"
+msgstr "Apr"
+
+msgid "May"
+msgstr "Mai"
+
+msgid "June"
+msgstr "Juuni"
+
+msgid "July"
+msgstr "Juuli"
+
+msgid "Aug"
+msgstr "Aug"
+
+msgid "Sep"
+msgstr "Sep"
+
+msgid "Oct"
+msgstr "Okt"
+
+msgid "Nov"
+msgstr "Nov"
+
+msgid "Dec"
+msgstr "Det"
+
+msgid "January"
+msgstr "Jaanuar"
+
+msgid "February"
+msgstr "Veebruar"
+
+msgid "March"
+msgstr "Märts"
+
+msgid "April"
+msgstr "Aprill"
+
+msgid "August"
+msgstr "August"
+
+msgid "September"
+msgstr "September"
+
+msgid "October"
+msgstr "Oktoober"
+
+msgid "November"
+msgstr "November"
+
+msgid "December"
+msgstr "Detsember"

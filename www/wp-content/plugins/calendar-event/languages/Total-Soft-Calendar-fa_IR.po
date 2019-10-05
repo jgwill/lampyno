@@ -1,0 +1,101 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2017-01-18 18:14+0400\n"
+"PO-Revision-Date: 2017-01-18 18:24+0400\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-KeywordsList: __\n"
+"Last-Translator: \n"
+"Language: fa\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+msgid "Mon"
+msgstr "دوشنبه"
+
+msgid "Tue"
+msgstr "سه شنبه"
+
+msgid "Wed"
+msgstr "چهارشنبه"
+
+msgid "Thu"
+msgstr "پنجشنبه"
+
+msgid "Fri"
+msgstr "جمعه"
+
+msgid "Sat"
+msgstr "شنبه"
+
+msgid "Sun"
+msgstr "یکشنبه"
+
+msgid "Jan"
+msgstr "دی"
+
+msgid "Feb"
+msgstr "بهمن"
+
+msgid "Mar"
+msgstr "اسفند"
+
+msgid "Apr"
+msgstr "فروردین"
+
+msgid "May"
+msgstr "اردیبهشت"
+
+msgid "June"
+msgstr "خرداد"
+
+msgid "July"
+msgstr "تیر"
+
+msgid "Aug"
+msgstr "مرداد"
+
+msgid "Sep"
+msgstr "شهریور"
+
+msgid "Oct"
+msgstr "مهر"
+
+msgid "Nov"
+msgstr "آبان"
+
+msgid "Dec"
+msgstr "آذر"
+
+msgid "January"
+msgstr "دی"
+
+msgid "February"
+msgstr "بهمن"
+
+msgid "March"
+msgstr "اسفند"
+
+msgid "April"
+msgstr "فروردین"
+
+msgid "August"
+msgstr "مرداد"
+
+msgid "September"
+msgstr "شهریور"
+
+msgid "October"
+msgstr "مهر"
+
+msgid "November"
+msgstr "آبان"
+
+msgid "December"
+msgstr "آذر"

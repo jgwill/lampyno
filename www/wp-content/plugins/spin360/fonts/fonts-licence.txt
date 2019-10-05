@@ -1,0 +1,11 @@
+icospin fonts are a subset of:
+http://fontawesome.io/
+http://ionicons.com/
+
+License
+both fonts are licensed under the MIT license
+http://opensource.org/licenses/MIT
+
+references:
+https://icomoon.io/app/#/select
+https://github.com/rastasheep/ionicons-sprite
