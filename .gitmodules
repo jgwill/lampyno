@@ -1,0 +1,3 @@
+[submodule "bin/lampyno-fe"]
+	path = bin/lampyno-fe
+	url = git@github.com:jgwill/lampyno-fe.git
