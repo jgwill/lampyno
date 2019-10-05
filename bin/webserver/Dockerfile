@@ -119,3 +119,12 @@ RUN apt-get install -y poppler-utils vim iputils-ping
 
 # Nettool
 RUN apt-get install -y net-tools
+
+
+# Python
+RUN apt install -y python-pip
+RUN apt install -y python3-pip
+
+
+# local linking
+RUN ln -sf /var/www/html /www
