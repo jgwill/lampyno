@@ -2,5 +2,5 @@
 
 # Connect to
 
-docker exec -it png-mysql "bash"
+docker exec -it lampyno-be "bash"
 

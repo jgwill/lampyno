@@ -1,3 +1,6 @@
 [submodule "bin/lampyno-fe"]
 	path = bin/lampyno-fe
 	url = git@github.com:jgwill/lampyno-fe.git
+[submodule "bin/be-mysql"]
+	path = bin/be-mysql
+	url = git@github.com:jgwill/be-mysql.git

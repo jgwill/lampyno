@@ -14,7 +14,7 @@ This is a basic LAMP stack environment built using Docker Compose. It consists f
 * MySQL
 * phpMyAdmin
 * NodeJS
-* Python (todo)
+* Python 
 
 
 
@@ -29,7 +29,7 @@ git fetch --all
 docker-compose up -d
 ```
 
-Your LAMP stack is now ready!! You can access it via `http://localhost`.
+Your LAMP Python NodeJS stack is now ready!! You can access it via `http://localhost`.
 
 ## Configuration and Usage
 

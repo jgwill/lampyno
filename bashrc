@@ -102,11 +102,16 @@ fi
 # Alias to facilitate management of containers.  
 ## webs-bash, be-bash, webs-restart, be-restart
 
-alias webs-bash='docker exec -it png-webserver "bash"'
-alias be-bash='docker exec -it png-mysql "bash"'
-alias webs-restart='docker container restart png-webserver'
-alias be-restart='docker container restart png-mysql'
+alias webs-bash='docker exec -it lampyno-fe "bash"'
+alias fe-bash='docker exec -it lampyno-fe "bash"'
+alias be-bash='docker exec -it lampyno-be "bash"'
+alias webs-restart='docker container restart lampyno-fe'
+alias fe-restart='docker container restart lampyno-fe'
+alias be-restart='docker container restart lampyno-be'
 alias ws-restart-all=' (webs-restart & ); (be-restart & )'
+
+
+
 # nav to VR360 storage
 alias cdvr='cd /gi/wp-content/uploads/sites/20/spin360show/'
 

@@ -4,7 +4,7 @@ services:
   webserver:
     build: 
       context: ./bin/webserver
-    container_name: 'png-webserver'
+    container_name: 'lampyno-fe'
     restart: 'always'
     ports:
       - "80:80"
@@ -18,7 +18,7 @@ services:
       - ${LOG_DIR-./logs/apache2}:/var/log/apache2
   mysql:
     build: ./bin/mysql
-    container_name: 'png-mysql'
+    container_name: 'lampyno-be'
     restart: 'always'
     ports:
       - "3306:3306"
@@ -26,7 +26,7 @@ services:
       - ${MYSQL_DATA_DIR-./data/mysql}:/var/lib/mysql
       - ${MYSQL_LOG_DIR-./logs/mysql}:/var/log/mysql
     environment:
-      MYSQL_ROOT_PASSWORD: tiger
+      MYSQL_ROOT_PASSWORD: JGW1ll
       MYSQL_DATABASE: png
       MYSQL_USER: png
       MYSQL_PASSWORD: png

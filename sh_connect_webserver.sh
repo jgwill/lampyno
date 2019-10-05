@@ -2,5 +2,5 @@
 
 # Connect to
 
-docker exec -it png-webserver "bash"
+docker exec -it lampyno-fe "bash"
 
