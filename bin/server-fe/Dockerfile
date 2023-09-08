@@ -65,6 +65,8 @@ RUN docker-php-ext-install mysqli
 #RUN docker-php-ext-install tokenizer
 #RUN docker-php-ext-install json
 
-#RUN apt-get -y install zlib1g-dev
+RUN apt -y install zlib1g-dev
 #RUN docker-php-ext-install zip
+
+##@STCIssue those commented above has phpinsl issues
 
