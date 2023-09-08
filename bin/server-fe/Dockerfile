@@ -75,14 +75,19 @@ RUN apt -y install zlib1g-dev
 
 
 
-RUN apt-get -y install libicu-dev
+RUN apt -y install libicu-dev
 RUN docker-php-ext-install -j$(nproc) intl
 
 #RUN docker-php-ext-install mbstring
 
 RUN apt-get install -y libfreetype6-dev libjpeg62-turbo-dev libpng-dev
-RUN docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ 
-RUN docker-php-ext-install -j$(nproc) gd
+
+
+#
+#RUN docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ 
+#RUN docker-php-ext-install -j$(nproc) gd
+##configure wont run above
+
 
 # Enable apache modules
 RUN a2enmod rewrite headers
@@ -91,10 +96,10 @@ RUN a2enmod rewrite headers
 
 
 #@v INstall node.js
-RUN apt-get -y install python 
+RUN apt -y install python3
 
 
-RUN curl -sL https://deb.nodesource.com/setup_16.x | bash -
-RUN apt-get install -y nodejs
+#RUN curl -sL https://deb.nodesource.com/setup_16.x | bash -
+#RUN apt-get install -y nodejs
 
 
