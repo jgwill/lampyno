@@ -21,3 +21,14 @@ RUN apt install libcurl4 -y
 
 
 #libcurl3 libcurl3-dev zip -y
+
+
+
+#
+# Composer
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
+# Install xdebug
+#RUN pecl install xdebug-2.5.0
+#RUN docker-php-ext-enable xdebug
+RUN pecl --version
