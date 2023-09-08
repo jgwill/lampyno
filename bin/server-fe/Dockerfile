@@ -1,14 +1,16 @@
 # FROM php:latest
-FROM php:7.1.20-apache
+#FROM php:7.1.20-apache
+FROM php:8.1.23-apache
+
 # FROM php:7.1-alpine3.8
 
 RUN apt-get -y update --fix-missing
 RUN apt-get upgrade -y
-
+#RUN apt update
 
 
 # Install useful tools
-RUN apt-get -y install apt-utils nano wget dialog
+RUN apt -y install apt-utils nano wget dialog
 
 # Install important libraries
 RUN apt-get -y install --fix-missing apt-utils build-essential git curl libcurl3 libcurl3-dev zip
@@ -56,7 +58,7 @@ RUN a2enmod rewrite headers
 RUN apt-get -y install python 
 
 
-RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_16.x | bash -
 RUN apt-get install -y nodejs
 
 
@@ -75,7 +77,7 @@ RUN yarn global add gulp gulp-watch gulp-plumber gulp-wait gulp-shell gulp-minif
 ########################## ANGULAR STACK #######
 #@v Angular Dev tool
 RUN yarn global add  @angular/cli
-#RUN yarn global add @angularÃ¢â‚¬â€˜devkit/buildÃ¢â‚¬â€˜angular
+#RUN yarn global add @angularÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œdevkit/buildÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œangular
 RUN yarn global add hammerjs 
 
 
