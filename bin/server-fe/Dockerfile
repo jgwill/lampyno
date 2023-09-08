@@ -33,3 +33,37 @@ RUN pecl install xdebug
 
 RUN docker-php-ext-enable xdebug
 
+
+
+
+# Other PHP7 Extensions
+
+RUN apt install libmcrypt-dev -y
+
+
+RUN apt install libsqlite3* -y
+
+#mysql-client
+
+WORKDIR /root
+RUN echo " ">> .bashrc
+RUN echo "alias x=exit">> .bashrc
+
+
+RUN pecl install mcrypt
+
+
+
+RUN apt -y install default-mysql-client
+
+RUN docker-php-ext-install pdo_mysql 
+RUN docker-php-ext-install pdo_sqlite
+RUN docker-php-ext-install mysqli
+
+RUN docker-php-ext-install curl
+RUN docker-php-ext-install tokenizer
+RUN docker-php-ext-install json
+
+RUN apt-get -y install zlib1g-dev
+RUN docker-php-ext-install zip
+
