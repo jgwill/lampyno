@@ -99,7 +99,33 @@ RUN a2enmod rewrite headers
 RUN apt -y install python3
 
 
-#RUN curl -sL https://deb.nodesource.com/setup_16.x | bash -
-#RUN apt-get install -y nodejs
+RUN curl -sL https://deb.nodesource.com/setup_16.x | bash -
+RUN apt install -y nodejs
+
+
+
+
+#_____
+
+
+RUN npm install npm --g
+
+
+#@v Node dev build base
+RUN npm i --g gyp node-pre-gyp 
+
+#@v Minimal dev NPM
+RUN npm i --g gulp gulp-watch gulp-plumber gulp-wait gulp-shell gulp-minify gulp-uglify gulp-copy gulp-rename 
+
+
+
+########################## ANGULAR STACK #######
+#@v Angular Dev tool
+RUN npm i --g  @angular/cli
+
+
+
+
+
 
 
