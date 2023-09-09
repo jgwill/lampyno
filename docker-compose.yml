@@ -1,24 +1,27 @@
 version: "3"
 
 services:
-  webserver:
-    build: 
-      context: ./bin/server-fe
+  fe:
+    # build: 
+    # context: ./bin/server-fe
+    #    container_name: 'jgwill/server:fe'
     container_name: 'fe'
+    image: 'jgwill/server:fe'
     restart: 'always'
     ports:
       - "80:80"
       - "443:443"
     links: 
-      - mysql
+      - be
     volumes: 
       - ${DOCUMENT_ROOT-./www}:/var/www/html
       - ${PHP_INI-./config/php/php.ini}:/usr/local/etc/php/php.ini
       - ${VHOSTS_DIR-./config/vhosts}:/etc/apache2/sites-enabled
       - ${LOG_DIR-./logs/apache2}:/var/log/apache2
-  mysql:
-    build: ./bin/server-be
+  be:
+    # build: ./bin/server-be
     container_name: 'be'
+    image: 'jgwill/server:be'
     restart: 'always'
     ports:
       - "3306:3306"
@@ -34,12 +37,12 @@ services:
     image: phpmyadmin/phpmyadmin
     container_name: 'png-phpmyadmin'
     links:
-      - mysql
+      - be
     environment:
-      PMA_HOST: mysql
+      PMA_HOST: be
       PMA_PORT: 3306
     ports:
-      - '8080:80'
+      - '8888:80'
     volumes: 
       - /sessions
   redis:
@@ -47,3 +50,4 @@ services:
     image: redis:latest
     ports:
       - "6379:6379"
+
