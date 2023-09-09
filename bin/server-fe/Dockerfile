@@ -138,6 +138,35 @@ RUN npm i --g gyp node-pre-gyp
 #@v Angular Dev tool
 RUN npm i --g  @angular/cli
 
+RUN apt install vim -y
+
+# An Angular App so Packages are downloaded once
+#RUN mkdir -m 777 /app
+#RUN ng new ngapp --defaults --directory /app --routing --style scss 
+
+
+WORKDIR /ngapp
+RUN echo "{\"cli\": { \"analytics\": false }}" > angular.json 
+
+
+#RUN ng new ngapp --defaults --directory /app --routing --style scss
+
+#WORKDIR /app/ngapp
+
+#RUN ng add @angular/material
+
+#RUN npm install --save hammerjs
+
+# Other NPM Packages
+#RUN npm i --g express.js 
+
+# Other tools
+#RUN apt install -y poppler-utils vim iputils-ping net-tools
+
+#RUN 
+
+# local linking
+#RUN ln -sf /var/www/html /www
 
 
 
