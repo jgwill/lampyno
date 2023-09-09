@@ -3,8 +3,8 @@ version: "3"
 services:
   webserver:
     build: 
-      context: ./bin/webserver
-    container_name: 'lampyno-fe'
+      context: ./bin/server-fe
+    container_name: 'fe'
     restart: 'always'
     ports:
       - "80:80"
@@ -17,8 +17,8 @@ services:
       - ${VHOSTS_DIR-./config/vhosts}:/etc/apache2/sites-enabled
       - ${LOG_DIR-./logs/apache2}:/var/log/apache2
   mysql:
-    build: ./bin/mysql
-    container_name: 'lampyno-be'
+    build: ./bin/server-be
+    container_name: 'be'
     restart: 'always'
     ports:
       - "3306:3306"
