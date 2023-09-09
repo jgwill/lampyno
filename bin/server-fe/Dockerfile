@@ -140,6 +140,11 @@ RUN npm i --g  @angular/cli
 
 RUN apt install vim -y
 
+RUN apt install -y poppler-utils vim iputils-ping net-tools
+
+# local linking
+RUN ln -sf /var/www/html /www
+
 # An Angular App so Packages are downloaded once
 #RUN mkdir -m 777 /app
 #RUN ng new ngapp --defaults --directory /app --routing --style scss 
