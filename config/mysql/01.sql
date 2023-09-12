@@ -1,0 +1,3 @@
+GRANT ALL ON *.* TO 'c'@'%';
+FLUSH PRIVILEGES;
+

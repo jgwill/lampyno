@@ -25,17 +25,21 @@ services:
     restart: 'always'
     ports:
       - "3306:3306"
+    expose:
+      - '3306'
     volumes: 
       - ${MYSQL_DATA_DIR-./data/mysql}:/var/lib/mysql
       - ${MYSQL_LOG_DIR-./logs/mysql}:/var/log/mysql
+      - ./config/mysql:/docker-entrypoint-initdb.d
     environment:
+      MYSQL_INITDB: /docker-entrypoint-initdb.d/01.sql
       MYSQL_ROOT_PASSWORD: JGW1ll
       MYSQL_DATABASE: png
       MYSQL_USER: png
       MYSQL_PASSWORD: png
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
-    container_name: 'png-phpmyadmin'
+    container_name: 'bemy'
     links:
       - be
     environment:
