@@ -61,4 +61,13 @@ typings/
 .env
 
 # next.js build output
-.next
+.nextx
+
+
+
+
+data/mysql
+data/mysql.*
+old*
+zold
+
