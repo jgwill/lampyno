@@ -1,2 +1,0 @@
-preloader svg:
-http://jorgecardoso.eu/static/blog/2012-10-07-Scalable-Ajax-Loading-Indicator-in-SVG.html

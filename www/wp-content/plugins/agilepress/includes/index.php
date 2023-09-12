@@ -1,4 +1,0 @@
-<?php
-/**
- * includes/index.php
- */

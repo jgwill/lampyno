@@ -1,4 +1,0 @@
-<?php
-/**
- * admin/index.php
- */

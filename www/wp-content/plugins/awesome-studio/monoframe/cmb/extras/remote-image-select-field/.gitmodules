@@ -1,3 +1,0 @@
-[submodule "includes/wds-image-grabber"]
-	path = includes/wds-image-grabber
-	url = git@github.com:WebDevStudios/WDS-Image-Grabber.git
