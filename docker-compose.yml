@@ -31,6 +31,7 @@ services:
       - ${MYSQL_DATA_DIR-./data/mysql}:/var/lib/mysql
       - ${MYSQL_LOG_DIR-./logs/mysql}:/var/log/mysql
       - ./config/mysql:/docker-entrypoint-initdb.d
+      - /var/run/mysqld:/var/run/mysqld
     environment:
       MYSQL_INITDB: /docker-entrypoint-initdb.d/01.sql
       MYSQL_ROOT_PASSWORD: JGW1ll
